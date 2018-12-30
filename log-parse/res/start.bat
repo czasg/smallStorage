@@ -1,0 +1,3 @@
+python func.py
+
+pause
