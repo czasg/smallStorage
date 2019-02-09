@@ -103,4 +103,5 @@ def img2num(picture): # input a picture name is ok
     return result # this is a list including picture2num
 
 if __name__ == '__main__':
-    img2num('')
+    img2num('123.png')
+    img2num('456.png')
