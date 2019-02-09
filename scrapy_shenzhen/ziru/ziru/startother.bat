@@ -1,0 +1,3 @@
+python other.py
+
+pause
