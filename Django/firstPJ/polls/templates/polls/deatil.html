@@ -1,0 +1,13 @@
+{% load static %}
+<!--detail error msg-->
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'polls:vote' question.id %}" method="POST">
+{% csrf_token %}
+
+	
+    <input type="radio" name="choice" id="choice" value="{{ question.id }}" />
+    <label for="choice">{{ question }}</label><br />
+
+<input type="submit" value="Vote" />
+</form>
