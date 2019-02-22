@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vote Web</title>
+</head>
+<body>
+<div>
+	<h2>hello, wellcome to vote web</h2><br/>
+	now, Here exists some problems<br/>
+	we hope you can vote a precious polls<br/>
+</div>
+<ul>
+	{% for data in question %}
+	<li>{{ data.question_title }}</li>
+	{% endfor %}
+</ul>
+
+<div>
+	there are some other server for you<br/>
+	<ul>
+		<li><a href="{% url 'polls:result' %}">vote result</a></li>
+		<li><a href="{% url 'polls:question' %}">question content</a></li>
+		<li><a href="{% url 'polls:vote' %}">i want to vote it</a></li>
+	</ul>
+</div>
+</body>
+</html>

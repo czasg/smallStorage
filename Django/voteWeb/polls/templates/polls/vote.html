@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vote system</title>
+</head>
+<body>
+
+<h2>hello, wellcome to vote web</h2><br/>
+now, you will vote for those problems<br/>
+<form action="{% url 'polls:vote_func' %}" method="post">
+	{% csrf_token %}
+	{% for data in choice %}
+	<input type="radio" name="vote" value="{{data.id}}">{{data.choice_obj}}<br/>
+	{% endfor %}
+	<input type="submit" name="submit my polls">
+</form>
+
+
+</body>
+</html>
