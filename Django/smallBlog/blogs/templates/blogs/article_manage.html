@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>博客管理</title>
+</head>
+<body>
+<label>博客总览：</label><br/>
+<form action="{% url 'blogs:article_manage_action' %}" method="post">
+	{% if articles %}
+	{% csrf_token %}
+	<input type="hidden" name="type" value="0">
+	{% for article in articles %}
+	<input type="radio" name="article_id" value="{{ article.id }}">{{ article.article_title }}<br/>
+	{% endfor %}
+	<input type="submit" value="删除博客">
+	{% endif %}
+</form>
+<label>评论总览：</label><br/>
+<form action="{% url 'blogs:article_manage_action' %}" method="post">
+	{% if comments %}
+	{% csrf_token %}
+	<input type="hidden" name="type" value="1">
+	{% for comment in comments %}
+	<input type="radio" name="comment_id" value="{{ comment.id }}">{{ comment.comment_content }}<br/>
+	{% endfor %}
+	<input type="submit" value="删除评论">
+	{% endif %}
+</form>
+</body>
+</html>
