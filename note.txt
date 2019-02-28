@@ -1,0 +1,21 @@
+Scrapy:
+scrapy startproject TencentSpider
+scrapy genspider tencentPostion "tencent.com"
+scrapy genspider -t crawl tencent tencent.com
+scrapy crawl tencentPosition
+
+Django:
+django-admin startproject mysite
+python manage.py startapp polls
+python manage.py runserver
+python manage.py collectstatic
+python manage.py makemigrations
+python manage.py migrate
+
+nginx:
+sudo service nginx start/stop
+sudo /etc/init.d/nginx restart
+
+uwsgi:
+uwsgi --http-socket :8001 --wsgi-file test.py
+uwsgi --socket :8001 --module project.wsgi:application
