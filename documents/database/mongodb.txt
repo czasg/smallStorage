@@ -1,0 +1,28 @@
+# mongodb分布式文件存储数据库
+# 文件即字典型数据结构
+import pymongo
+myclient = pymongo.MongoClient("mongodb://localhost:8860")
+mydb = myclient["czasg"]
+mycol = mydb["sites"]
+
+# 插入单个文档
+mydict = {"name":"cza","url":"https://github.com"}
+x = mycol.insert_one(mydict)
+
+# 插入多个文档
+mydict = [{"_id":1,"name":"cza","url":"http://czasg.xyz"},
+{"_id":2,"name":"sg","url":"http://czaOrz.xyz"}]
+x = mycol.insert_many(mydict)
+
+# 查找一个，查找全部，查找指定数据
+x = mycol.find_one()
+x = mycol.find()
+x = mycol.find({},{"_id":0,"name":1,"url":1})
+
+# 更新数据
+myquery = {"name":"cza"}
+newvalues = {"$set":{"name":"cczzaa"}}
+mycol.update_many(myqquery, newvalues)
+
+# 排序，对"alexa"按降序排序
+mydoc = mycol.find().sort("alexa", -1)
