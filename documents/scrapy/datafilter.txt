@@ -1,0 +1,21 @@
+xpath
+response.xpath('//node/div[@class="czasg"]/a/text()').extract()
+response.xpath('//div[@id="cza"]//p//text()').extract()
+response.xpath('//div[@class="czasg"]//@href').extract()
+response.xpath('//div[@class="cza" and @id="issg"]').extract()
+response.xpath('//*').extract()
+response.xpath('//div[@class]').extract()
+response.xpath('//div[@class="cza"]/*').extract()
+response.xpath('//div[starts-with(@class,"cza")]')  # match 'cza' in the beginning, such as class="czaissg"
+response.xpath('//div[contains(@class,"is")]')  # match 'is' in any position, such class="czaissg"
+response.xpath('//div[@*="czaissg"]')  # match any 'div' which is equal to "czaissg"
+response.xpath('//div/span[contains(text(),"search")]')  # match 'text()'
+
+CSS
+response.css('node div[class=czasg] a::text').extract()
+response.css('div[id=cza] p::text').extract()
+response.css('.czasg *::attr(href)')
+response.css('div[class=cza]').extract()
+response.css('*::text')
+response.css('div[class]')
+response.css('div[class=cza] *')
