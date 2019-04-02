@@ -12,7 +12,7 @@ class IMG(object):
         self.col = 0
         self.imgList = []
         self.img2gsi(threshold)
-        self.splitImg(coor)
+        self.splitImg(splitcoor)
 
     def img2gsi(self, threshold):
         self.img = self.img.convert('L')
