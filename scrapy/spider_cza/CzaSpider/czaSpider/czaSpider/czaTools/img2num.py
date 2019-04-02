@@ -1,22 +1,25 @@
 from PIL import Image
+import numpy as np
+import operator
 
-from .database import get_data_for_img2num
-from czaSpider.czaTools import *
+from czaSpider.czaTools.database import get_data_for_img2num
 
 
 class IMG(object):
-    def __init__(self, pic):
+    def __init__(self, pic, threshold=140, splitcoor=None):
         self.img = Image.open(pic)
         self.row = 0
         self.col = 0
         self.imgList = []
+        self.img2gsi(threshold)
+        self.splitImg(coor)
 
     def img2gsi(self, threshold):
         self.img = self.img.convert('L')
         coorData = self.img.load()
-        self.row, self.col = self.img.size
-        for x in range(self.row):
-            for y in range(self.col):
+        self.col, self.row = self.img.size
+        for x in range(self.col):
+            for y in range(self.row):
                 if coorData[x, y] > threshold:
                     coorData[x, y] = 1
                 else:
@@ -31,20 +34,23 @@ class IMG(object):
         for r in range(_row):
             for c in range(_col):
                 box = (c * weight, r * height, (c + 1) * weight, (r + 1) * height)
-                list.append(np.array(self.img.corp(box), 'f'))
+                list.append(np.array(self.img.crop(box), 'f'))
                 num += 1
         self.imgList = list
 
+
 class KNN(object):
-    def __init__(self, k=3):
+    def __init__(self, matData, k=3):
+        self.matData = matData
         self.trainingSet = get_data_for_img2num()
         self.vector = None
         self.vector = []
         self.k = k
+        self.res = self.process_matData()
 
     def box2vector(self, box):
-        row, col = np.shape(box)
-        vector = np.zeros((1,row*col))
+        row, col = box.shape
+        vector = np.zeros((1, row * col))
         count = 0
         for row in box:
             for gsi in row:
@@ -52,11 +58,38 @@ class KNN(object):
                 count += 1
         return vector
 
-    def classify(self, dataSet=None, labels=None, k=None):
+    def classify(self, matData):
+        trainMat, trainLabel = self.trainingSet
+        trainSetSize = trainMat.shape[0]
+        diffMat = np.tile(matData, (trainSetSize, 1)) - trainMat
+        squareDiff = diffMat ** 2
+        squareDiffDistance = squareDiff.sum(axis=1)
+        distances = squareDiffDistance ** 0.5
+        sortedDistIndicies = distances.argsort()
+        classCount = {}
+        for i in range(self.k):
+            kLabel = trainLabel[sortedDistIndicies[i]]
+            classCount[kLabel] = classCount.get(kLabel, 0) + 1
+        resSorted = sorted(classCount.items(), key=operator.itemgetter(1), reverse=True)
+        return resSorted[0][0]
+
+    def process_matData(self):
+        list = []
+        for matData in self.matData:
+            vector = self.box2vector(matData)
+            res = self.classify(vector)
+            list.append(res)
+        return list
 
 
 def img2num(picture, threshold=140, coor=(1, 10)):
-    picture = IMG(picture)
-    picture.img2gsi(threshold)
-    picture.splitImg(coor)
-    pass
+    picture = IMG(picture, threshold, splitcoor=coor)
+    knn = KNN(picture.imgList)
+    return knn.res
+
+
+if __name__ == "__main__":
+    res = img2num("2710386495.png")
+    print(res)
+    res = img2num("4069751832.png")
+    print(res)

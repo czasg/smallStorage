@@ -16,4 +16,5 @@ class MySpider(czaSpider):
 
 
 if __name__ == "__main__":
-    MySpider.cza_run_spider()
+    # MySpider.cza_run_spider()
+    img2num("2710386495.png")
