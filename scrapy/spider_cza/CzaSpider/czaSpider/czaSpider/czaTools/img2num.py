@@ -89,7 +89,16 @@ def img2num(picture, threshold=140, coor=(1, 10)):
 
 
 if __name__ == "__main__":
-    res = img2num("2710386495.png")
-    print(res)
-    res = img2num("4069751832.png")
-    print(res)
+    imgName = "2710386495"
+    resTrue = [int(i) for i in imgName]
+    res = img2num(imgName+".png")
+    print(res == resTrue)
+    imgName = "4069751832"
+    resTrue = [int(i) for i in imgName]
+    res = img2num(imgName + ".png")
+    print(res == resTrue)
+    imgName = "2364789501"
+    resTrue = [int(i) for i in imgName]
+    res = img2num(imgName + ".png")
+    print(res == resTrue)
+
