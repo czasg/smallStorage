@@ -1,14 +1,20 @@
 import unittest
 
 from . import First, FirstTestSet
+from . import Second, SecondTestSet
 
 
 class Test(unittest.TestCase):
+    def test_Second(self):
+        res1 = Second.solution1(SecondTestSet["l1"], SecondTestSet["l2"])
+        self.assertEqual(res1, SecondTestSet["res"])
+
     def test_First(self):
         res1 = First.solution1(FirstTestSet["nums"], FirstTestSet["target"])
         self.assertEqual(res1, FirstTestSet["res"])
         res2 = First.solution2(FirstTestSet["nums"], FirstTestSet["target"])
         self.assertEqual(res2, FirstTestSet["res"])
+
 
 
 if __name__ == '__main__':
