@@ -1,7 +1,7 @@
 import unittest
 
-from . import First, FirstTestSet
-from . import Second, SecondTestSet
+from . import First, FirstTestSet  # pass
+from . import Second, SecondTestSet  # pass
 
 
 class Test(unittest.TestCase):

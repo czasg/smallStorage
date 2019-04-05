@@ -1,13 +1,34 @@
-class Test():
-    @classmethod
-    def solution1(clsm, l1, l2):
-        pass
-
-
 class ListNode(object):
     def __init__(self, val, next=None):
         self.val = val
         self.next = next
+
+
+class Test():
+    @classmethod
+    def solution1(clsm, l1, l2):
+        # singly-linked list to int
+        def _sll2int(sll):
+            res = []
+            while sll:
+                res.append(sll.val)
+                sll = sll.next
+            return int("".join([str(val) for val in res[::-1]]))
+
+        # int to singly-linked list
+        def _int2sll(num):
+            # poor = [ListNode(int(val)) for val in str(num)]
+            # res = temp = poor.pop()
+            # while poor:
+            #     temp.next = poor.pop()
+            #     temp = temp.next
+            # return res
+            # 此处返回一个链表，不适用与此处的测试，下面重写
+            return [int(val) for val in str(num)][::-1]
+
+        # main
+        res = _sll2int(l1) + _sll2int(l2)
+        return _int2sll(res)
 
 
 class ListLine(object):
@@ -142,7 +163,9 @@ class ListLine(object):
             return "->".join(map(lambda v: str(v), list))
 
 
-testSet = {"l1": [2, 4, 3], "l2": [5, 6, 4], "res": [7, 0, 8]}
+testSet = {"l1": ListLine([2, 4, 3]).head,
+           "l2": ListLine([5, 6, 4]).head,
+           "res": [7, 0, 8]}
 
 if __name__ == "__main__":
     line = ListLine([1, 2, 3, 4, 5])
