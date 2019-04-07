@@ -2,9 +2,14 @@ import unittest
 
 from . import First, FirstTestSet  # pass
 from . import Second, SecondTestSet  # pass
+from . import Third, ThirdTestSet  # pass
 
 
 class Test(unittest.TestCase):
+    def test_third(self):
+        res1 = Third.solution1(ThirdTestSet["s1"])
+        self.assertEqual(res1, ThirdTestSet["res"])
+
     def test_Second(self):
         res1 = Second.solution1(SecondTestSet["l1"], SecondTestSet["l2"])
         self.assertEqual(res1, SecondTestSet["res"])

@@ -6,7 +6,7 @@ class ListNode(object):
 
 class Test():
     @classmethod
-    def solution1(clsm, l1, l2):
+    def solution1(cls, l1, l2):
         # singly-linked list to int
         def _sll2int(sll):
             res = []
