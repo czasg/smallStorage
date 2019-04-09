@@ -1,0 +1,6 @@
+关于xlrd和xlwt的一些用法
+
+比如在一堆数据中如何做到分类
+可以先获取对应栏的下标，记录在一个字典里面
+然后通过range(1,sheet.nrows)和sheet.row_values(i)来遍历每一行的数据
+然后匹配到想要写入的index，通过sheet.write(x,y,value)进行写值
