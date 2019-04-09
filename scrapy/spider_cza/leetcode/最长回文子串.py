@@ -1,25 +1,19 @@
 class Test(object):
     @classmethod
     def solution1(cls, s: str) -> str:
-        def judgeStr(x):
-            return x == x[::-1]
-
+        res = s[0] if s else s
         dict = {}
-        flag, res = 0, 0
-        l, r, left, right = 0, 0, 0, 0
         for index, value in enumerate(s):
             if value in dict:
-                flag = dict[value]
-                if judgeStr(s[flag:index + 1]):
-                    l, r = flag, index
-                # print('l,r', l, r)
-            if (r - l) >= res:
-                res = r - l
-                left, right = l, r
-                # print('left, right', left, right)
-            dict.setdefault(value, index)
-            print(dict)
-        return s[left:right + 1]
+                dict[value].append(index)
+                for val in dict[value]:
+                    aim = s[val: index + 1]
+                    reAim = aim[::-1]
+                    if aim == reAim and len(aim) >= len(res):
+                        res = aim
+                        break
+            dict.setdefault(value, [index])
+        return res
 
     @classmethod
     def solution2(cls, s: str) -> str:
@@ -55,8 +49,30 @@ class Test(object):
             dict.setdefault(value, [index])
         return s[left:right + 1]
 
+    @classmethod
+    def solution4(cls, s: str) -> str:
+        res = s[0] if s else s
+        dict = {}
+        for index, value in enumerate(s):
+            if value in dict:
+                dict[value].append(index)
+                print('111',value,dict[value])
+                for val in dict[value]:
+                    string = s[val: index + 1]
+                    reString = string[::-1]
+                    if string == reString and len(string) >= len(res):
+                        print(string, val, index + 1)
+                        res = string
+                        break
+            dict.setdefault(value, [index])
+            print(dict)
+        return res
+
+testSet = {"str":"adacada", "res":"adacada"}
 
 if __name__ == "__main__":
-    res = "babadada"
+    # res = "babadada"
     # res = "adacada"
+    # res = 'a'
+    res = 'ac'
     print(Test.solution1(res))
