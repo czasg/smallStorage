@@ -13,11 +13,17 @@ import pandas as pd
 10、df.groupby('SN').sum()  # 是否需要label变成索引，可以通过参数as_index=False设置
 notebook、df['A'].isin(list)  #这里就是针对A列，我们判断并保留值在这list中的各行。返回TrueFalse
 12、res = re_cza.findall('(简历|分工)(.*?)(?=简历|分工|$)', source)  # dict(res) 其中res必须是[(x,y),(x,y)]的结构
+13、使用apply(func, axis=1)，默认传入的参数就是该df，但需要加如参数axis=1
+apply(func, axis=1, args=(2,))  # 每次取一行数据传入，还可以额外传入参数
+apply(func, axis=0, args=(2,))  # 每次取一列数据传入，还可以额外传入参数
 
 # 使用pandas进行excel操作
 writer = pd.ExcelWriter('xxx.xlsx')  # 定义一个可以多页写的表格
 dataframe.to_excel(writer, sheet_name='cza', index=False, encoding='utf-8')  # 定义sheet页，index表示是否写入排序
 write.save()
+ExcelWriter一般常用的方法有：
+with pd.ExcelWriter(resFile) as writer: 
+df.to_excel(writer, sheet_name=name, index=True)  # index表示是否需要带上索引
 """
 if __name__ == "__main__":
     left = pd.DataFrame({"key":["k0","k1","k2","k3"],

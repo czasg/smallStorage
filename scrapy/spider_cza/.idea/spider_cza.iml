@@ -10,7 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/CzaSpider/czaSpider" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CzaSpider/czaSpider/czaSpider/items" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6.7 (C:\Program Files\Python36\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (python_test) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
