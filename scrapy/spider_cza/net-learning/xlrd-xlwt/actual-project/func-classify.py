@@ -17,7 +17,6 @@ class classify(object):
         for index, column in enumerate(self.source_sheet.row_values(0)):
             self.column_index.setdefault(column, index)
         # self.column_index = sorted(self.column_index, key=lambda x:x[1])
-
     def get_company_statistics(self):
         index = self.column_index["责任方"]
         for i in range(1, self.source_nrows):
