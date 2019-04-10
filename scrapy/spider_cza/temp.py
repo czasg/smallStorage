@@ -36,7 +36,7 @@ if __name__ == '__main__':
     # print(os.path.dirname(__file__), __file__)  # __file__是这个文件的完整路径
     # print(os.sep.join(['cza', 'is', 'sg']))
 
-    # dict1,dict2,dict3 = {'1':11,'2':22,'3':33},{'4':44,'5':{"22":22}},{'5':{'2':"11"}}
+    # dict1,dict2,dict3 = {'1':notebook,'2':22,'3':33},{'4':44,'5':{"22":22}},{'5':{'2':"notebook"}}
     # print(setting_plus(dict1,dict2,dict3))
 
     a,b = search(r'cza(\d)is(\s)sg', 'cza1is2sg').groups()

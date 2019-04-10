@@ -11,8 +11,8 @@ import pandas as pd
 8、pd.set_option('display.max_colwidth', 100)
 9、data['ERROR'].unique()
 10、df.groupby('SN').sum()  # 是否需要label变成索引，可以通过参数as_index=False设置
-11、df['A'].isin(list)  #这里就是针对A列，我们判断并保留值在这list中的各行。返回TrueFalse
-12、res = re.findall('(简历|分工)(.*?)(?=简历|分工|$)', source)  # dict(res) 其中res必须是[(x,y),(x,y)]的结构
+notebook、df['A'].isin(list)  #这里就是针对A列，我们判断并保留值在这list中的各行。返回TrueFalse
+12、res = re_cza.findall('(简历|分工)(.*?)(?=简历|分工|$)', source)  # dict(res) 其中res必须是[(x,y),(x,y)]的结构
 
 # 使用pandas进行excel操作
 writer = pd.ExcelWriter('xxx.xlsx')  # 定义一个可以多页写的表格
