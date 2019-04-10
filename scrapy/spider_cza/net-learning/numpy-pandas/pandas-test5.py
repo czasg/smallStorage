@@ -5,13 +5,14 @@ import pandas as pd
 2、line=line.decode('utf-8', 'ignore')  或者  line=line.encode('utf-8', 'ignore')
 3、dict[cza] = dict.get(cza, 0) + 1
 4、data['pre']=data['pre'].apply(lambda x:str(round(x/2))+'%')  #对某一列进行计算
-5、data=data[~(data['SN'].isin(list))].reset_index(drop=True)
+5、data=data[~(data['SN'].isin(list))].reset_index(drop=True)  # 传说中的过滤一把手啊
 6、data['xxx']=data['xxx'].replace(list1, list2)
 7、data.rename(columns={'old':'new'}, inplace=True)
 8、pd.set_option('display.max_colwidth', 100)
 9、data['ERROR'].unique()
-10、df.groupby('SN').sum()
-11、df['A'].isin(list)  #这里就是针对A列，我们判断并保留值在这list中的各行
+10、df.groupby('SN').sum()  # 是否需要label变成索引，可以通过参数as_index=False设置
+11、df['A'].isin(list)  #这里就是针对A列，我们判断并保留值在这list中的各行。返回TrueFalse
+12、res = re.findall('(简历|分工)(.*?)(?=简历|分工|$)', source)  # dict(res) 其中res必须是[(x,y),(x,y)]的结构
 
 # 使用pandas进行excel操作
 writer = pd.ExcelWriter('xxx.xlsx')  # 定义一个可以多页写的表格

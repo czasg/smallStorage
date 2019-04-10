@@ -8,8 +8,6 @@ class classify(object):
         self.resFile = resFile
 
     def process(self):
-        self.df["count"] = 1
-        print(self.df.groupby("责任方").sum())
         pass
     def save(self):
         self.df.to_excel(self.resFile)
