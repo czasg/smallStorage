@@ -12,7 +12,7 @@ import pandas as pd
 9、data['ERROR'].unique()
 10、df.groupby('SN').sum()  # 是否需要label变成索引，可以通过参数as_index=False设置
 notebook、df['A'].isin(list)  #这里就是针对A列，我们判断并保留值在这list中的各行。返回TrueFalse
-12、res = re_cza.findall('(简历|分工)(.*?)(?=简历|分工|$)', source)  # dict(res) 其中res必须是[(x,y),(x,y)]的结构
+12、res = re.findall('(简历|分工)(.*?)(?=简历|分工|$)', source)  # dict(res) 其中res必须是[(x,y),(x,y)]的结构
 13、使用apply(func, axis=1)，默认传入的参数就是该df，但需要加如参数axis=1
 apply(func, axis=1, args=(2,))  # 每次取一行数据传入，还可以额外传入参数
 apply(func, axis=0, args=(2,))  # 每次取一列数据传入，还可以额外传入参数

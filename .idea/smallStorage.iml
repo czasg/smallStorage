@@ -9,6 +9,9 @@
       <sourceFolder url="file://$MODULE_DIR$/CzaSpider/czaSpider/czaSpider/spiders" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CzaSpider/czaSpider" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CzaSpider/czaSpider/czaSpider/items" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scrapy/spider_cza" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scrapy/spider_cza/notebook" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.6.7 (C:\Program Files\Python36\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

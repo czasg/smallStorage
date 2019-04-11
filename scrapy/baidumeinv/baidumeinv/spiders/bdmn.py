@@ -40,7 +40,7 @@ class BdmnSpider(scrapy.Spider):
 		next_url=next_url[len(next_url)-1]
 		temp = response.css(".next-pre a::attr(href)").extract_first()
 		imgurl3 = temp.split('/')[-1]
-		next_url=re.sub(imgurl3,next_url,temp)
+		next_url=re.sub(imgurl3, next_url, temp)
 		print(next_url)
 		print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
 		print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
