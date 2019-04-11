@@ -12,9 +12,13 @@ class MySpider(czaSpider):
         yield Request(url, self.parse)
 
     def parse(self, response):
-        yield self.process_item(url=response.url)
-
+        urls = ["http://www.kk44kk.com","http://www.ye321.com"]
+        yield from traverse_urls(response, self, detail_urls=urls,callback=self.test)
+        # yield self.process_item(url=response.url)
+    def test(self, response):
+        print("hello cza's world")
 
 if __name__ == "__main__":
-    # MySpider.cza_run_spider()
-    img2num("2710386495.png")
+    MySpider.cza_run_spider()
+    # MySpider.processDataFromDatabase()
+    # shutil.rmtree()

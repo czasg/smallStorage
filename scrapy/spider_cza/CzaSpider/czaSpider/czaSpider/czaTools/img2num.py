@@ -1,8 +1,10 @@
 from PIL import Image
 import numpy as np
 import operator
+import os
 
 from czaSpider.czaTools.database import get_data_for_img2num
+from czaSpider.test_set import get_test_path
 
 
 class IMG(object):
@@ -82,23 +84,27 @@ class KNN(object):
         return list
 
 
+# main interface
 def img2num(picture, threshold=140, coor=(1, 10)):
     picture = IMG(picture, threshold, splitcoor=coor)
     knn = KNN(picture.imgList)
     return knn.res
 
 
-if __name__ == "__main__":
-    imgName = "2710386495"
-    resTrue = [int(i) for i in imgName]
-    res = img2num(imgName+".png")
-    print(res == resTrue)
-    imgName = "4069751832"
-    resTrue = [int(i) for i in imgName]
-    res = img2num(imgName + ".png")
-    print(res == resTrue)
-    imgName = "2364789501"
-    resTrue = [int(i) for i in imgName]
-    res = img2num(imgName + ".png")
-    print(res == resTrue)
+def get_name(file):
+    return os.path.basename(file).split(".")[0]
 
+
+def test():
+    testFilePath = get_test_path(get_name(__file__))
+    for file in testFilePath:
+        result = get_name(file)
+        res = img2num(file)
+        if ''.join([str(v) for v in res]) == result:
+            print("True")
+        else:
+            print("False")
+
+
+if __name__ == "__main__":
+    test()
