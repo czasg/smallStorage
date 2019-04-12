@@ -28,7 +28,7 @@ class czaSpider(scrapy.Spider):
     @classmethod
     def process_item(cls, **kwargs):
         itemName = cls.name[cls.name.rfind('-') + 1:] + "Item"
-        yield getattr(items, itemName)(**kwargs)
+        return getattr(items, itemName)(**kwargs)
 
     @classmethod
     def cza_run_spider(cls):

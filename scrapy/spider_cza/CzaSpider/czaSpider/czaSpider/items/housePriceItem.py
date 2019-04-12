@@ -3,6 +3,7 @@ from czaSpider.czaTools import *
 
 
 class Item(czaBaseItem):
+    # 此处继承父类，并指定需要拓展的类
     price = scrapy.Field()
     place = scrapy.Field()
 

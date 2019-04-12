@@ -18,4 +18,3 @@ def traverse_urls(response, spider, xpath_ruler=None,
             yield Request(url, callback)
         else:
             raise ValueError("Please appoint the callback func")
-    pass
