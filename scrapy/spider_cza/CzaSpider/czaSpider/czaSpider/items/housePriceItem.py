@@ -1,4 +1,4 @@
-from czaSpider.items import czaBaseItem
+from czaSpider.items import czaBaseItem, process_base_item
 from czaSpider.czaTools import *
 
 
@@ -10,11 +10,7 @@ class Item(czaBaseItem):
 
 def housePriceItem(**kwargs):
     item = Item()
-    item["spiderName"] = kwargs.pop('spiderName', None)
-    item["author"] = kwargs.pop('author', "czaOrz")
-    item["url"] = kwargs.pop('url', None)
-    item["releaseTime"] = kwargs.pop('releaseTime', None)
-    item["more"] = kwargs.pop('more', None)
+    item.update(process_base_item(**kwargs))
 
     item["price"] = kwargs.pop('price', None)
     item["place"] = kwargs.pop('place', None)

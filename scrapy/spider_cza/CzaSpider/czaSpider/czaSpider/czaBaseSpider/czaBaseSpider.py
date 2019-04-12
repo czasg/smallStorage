@@ -27,6 +27,8 @@ class czaSpider(scrapy.Spider):
 
     @classmethod
     def process_item(cls, **kwargs):
+        kwargs.setdefault("spiderName",cls.name)
+        kwargs.setdefault("author", cls.author)
         itemName = cls.name[cls.name.rfind('-') + 1:] + "Item"
         return getattr(items, itemName)(**kwargs)
 
