@@ -1,3 +1,3 @@
 housePricePipeline_setting = \
-    {"ITEM_PIPELINES":
+    {"DOWNLOADER_MIDDLEWARES":
          {'czaSpider.pipelines.housePrice.CzaSpiderPipeline': 300,}}

@@ -9,9 +9,11 @@ def traverse_urls(response, spider, xpath_rule=None, next_page_format=None,
                   **kwargs):
     detail_urls = kwargs.get("detail_urls", None)
     urls = detail_urls if detail_urls else data_from_xpath(response, xpath_rule, is_urls=True)
-    if not urls:
-        raise ValueError("what you get urls is None, Please check it's correctness")
-    for pipe in kwargs.get("url_pipe", []):
+    # if not urls:
+    #     raise ValueError("what you get urls is None, Please check it's correctness")
+    url_pipe = kwargs.get("url_pipe", None)
+    urls = [url_pipe(url) for url in urls] if url_pipe else urls
+    for pipe in kwargs.get("url_pipes", []):
         urls = [pipe(url) for url in urls]
 
     for url in urls:
@@ -57,9 +59,9 @@ def data_from_xpath(response, xpath_rule, join=False, returnList=False, is_url=F
         return response.xpath(xpath_rule).extract()
     elif is_url:
         url = xpathF(response, xpath_rule)
-        return response.urljoin(url)
+        return response.urljoin(url) if url else None
     elif is_urls:
         urls = response.xpath(xpath_rule).extract()
-        return [response.urljoin(each) for each in urls]
+        return [response.urljoin(each) for each in urls if each]
     else:
         return xpathF(response, xpath_rule)
