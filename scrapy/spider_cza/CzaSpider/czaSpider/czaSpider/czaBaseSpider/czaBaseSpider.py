@@ -11,6 +11,7 @@ class czaSpider(scrapy.Spider):
     name = "czaSpider"
     author = "czaOrz"
 
+    item = {}
     def start_requests(self):
         log.info("spider start...")
         if hasattr(self, "cza_start_request"):

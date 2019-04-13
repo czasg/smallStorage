@@ -4,11 +4,15 @@ from .url_func import get_next_page
 
 
 def traverse_urls(response, spider, xpath_rule=None, next_page_format=None,
-                  allow_next_page=True,
+                  allow_next_page=True,item={},meta=None,no_url=False,
                   callback=None, extend_callback=None,
                   **kwargs):
     detail_urls = kwargs.get("detail_urls", None)
-    urls = detail_urls if detail_urls else data_from_xpath(response, xpath_rule, is_urls=True)
+    if not no_url:
+        urls = detail_urls if detail_urls else data_from_xpath(response, xpath_rule, is_urls=True)
+    else:
+        urls = None
+    urls = urls if isinstance(urls, list) else [urls]
     # if not urls:
     #     raise ValueError("what you get urls is None, Please check it's correctness")
     url_pipe = kwargs.get("url_pipe", None)
@@ -17,17 +21,18 @@ def traverse_urls(response, spider, xpath_rule=None, next_page_format=None,
         urls = [pipe(url) for url in urls]
 
     for url in urls:
+        if not url:
+            continue
         if extend_callback:
             yield extend_callback(url)
         elif callback:
             yield Request(url, callback)
         else:
-            yield spider.process_item(url=url, )
+            item.setdefault("url", url)
+            yield spider.process_item(**item)
     # 未做去重，增量是个大问题
     if allow_next_page and urls:
-        # print(response.url, next_page_format, kwargs)
-        # print(get_next_page(response.url, next_page_format, **kwargs), '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-        yield Request(get_next_page(response.url, next_page_format, **kwargs), response.request.callback)
+        yield Request(get_next_page(response.url, next_page_format, **kwargs), response.request.callback, meta=meta)
 
 
 def xpathF(response, xpath_rule):
@@ -52,16 +57,21 @@ def xpathJ(response, xpath_rule, sep="", stripEach=True, stripEnd=True):
     return res.strip() if stripEnd else res
 
 
-def data_from_xpath(response, xpath_rule, join=False, returnList=False, is_url=False, is_urls=False, **kwargs):
-    if join:
+def data_from_xpath(response, xpath_rule, first=False, join=False,
+                    returnList=False, is_url=False, is_urls=False, **kwargs):
+    if first:
+        return xpathF(response, xpath_rule)
+    elif join:
         return xpathJ(response, xpath_rule, **kwargs)
     elif returnList:
         return response.xpath(xpath_rule).extract()
     elif is_url:
         url = xpathF(response, xpath_rule)
+        response = kwargs.get("source", response)
         return response.urljoin(url) if url else None
     elif is_urls:
         urls = response.xpath(xpath_rule).extract()
+        response = kwargs.get("source", response)
         return [response.urljoin(each) for each in urls if each]
     else:
-        return xpathF(response, xpath_rule)
+        return response.xpath(xpath_rule)

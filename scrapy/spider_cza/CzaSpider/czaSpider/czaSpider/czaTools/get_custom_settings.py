@@ -24,10 +24,10 @@ def setting_plus(*settings):
 
 
 def get_custom_settings(name):
-    pipeline = getattr(pipelines, name[name.rfind('-') + 1:] + "Pipeline_setting")
-    middleware = getattr(middlewares, "userAgentMiddleware_setting")
-    return setting_plus(pipeline,middleware)
-    # return getattr(pipelines, name[name.rfind('-') + 1:] + "Pipeline_setting")
+    # pipeline = getattr(pipelines, name[name.rfind('-') + 1:] + "Pipeline_setting")
+    # middleware = getattr(middlewares, "userAgentMiddleware_setting")
+    # return setting_plus(pipeline,middleware)
+    return getattr(pipelines, name[name.rfind('-') + 1:] + "Pipeline_setting")
 
 
 if __name__ == "__main__":

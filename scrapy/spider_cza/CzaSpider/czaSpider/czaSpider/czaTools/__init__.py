@@ -3,7 +3,7 @@ __all__ = ["re", "os", "sys", "time", "np", "pd", "shutil",
            "scrapy", "Request", "FormRequest",
 
            "get_custom_settings", "img2num", "traverse_urls", "xpathF", "xpathJ",
-           "data_from_xpath", "get_next_page"]
+           "data_from_xpath", "get_next_page", "img_download", "img_remove"]
 
 import re, os, sys, time
 import numpy as np
@@ -16,5 +16,6 @@ from scrapy import Request, FormRequest
 from .get_custom_settings import get_custom_settings
 from .img2num import img2num
 from .url_func import get_next_page
+from .img_download import img_download
+from .img_remove import img_remove
 from .scraper import traverse_urls, xpathF, xpathJ, data_from_xpath
-

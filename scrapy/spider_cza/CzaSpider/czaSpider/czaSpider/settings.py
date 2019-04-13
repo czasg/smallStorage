@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'czaSpider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "cza"
+USER_AGENT = ""
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False

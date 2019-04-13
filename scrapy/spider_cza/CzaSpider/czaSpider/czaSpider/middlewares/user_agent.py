@@ -13,7 +13,6 @@ class baseUserAgentMiddleware(UserAgentMiddleware):
     #     self.user_agent = user_agent
 
     def process_request(self, request, spider):
-        print("?????????????????")
         ua = random.choice(user_agent_pool)
         if ua:
             request.headers.setdefault('User-Agent', ua)
