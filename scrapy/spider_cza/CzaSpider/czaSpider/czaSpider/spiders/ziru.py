@@ -28,8 +28,10 @@ class MySpider(czaSpider):
     def process(self, response):
         house_place = response.meta["house_place"]
         self.item.setdefault("house_place", house_place)
-
-        img, price_list = re.search('"image":"(.*?)".+offset":(\[.*?\])};', response.text).groups()
+        try:
+            img, price_list = re.search('"image":"(.*?)".+offset":(\[.*?\])};', response.text).groups()
+        except AttributeError:
+            return
         price_list = eval(price_list)
 
         img_path = img_download(response.urljoin(img))
@@ -53,17 +55,12 @@ class MySpider(czaSpider):
                 data_from_xpath(house, './/div[@class="detail"]/p/span/text()', returnList=True)
 
             url = data_from_xpath(house, './/a[@class="t1"]/@href', is_url=True, source=response)
-            # urls.append(url)
-            yield self.process_item(url=url, **self.item)
+            urls.append(url)
+            if not self.collection.count({"url": url}):
+                yield self.process_item(url=url, **self.item)
 
-        yield from traverse_urls(response, self, meta=response.meta, detail_urls=urls,
+        yield from traverse_urls(response, self, meta=response.meta, detail_urls=urls,just_turn_page=True,
                                  next_page_format="p=%d", check_current_page="?p=1")
-    #         yield from traverse_urls(response, self, detail_urls=url, item=self.item,
-    #                                  next_page_format="p=%d", check_current_page="?p=1",
-    #                                  extend_callback=lambda url:Request(url, self.done, meta={"item":self.item}))
-    # def done(self, response):
-    #     item = response.meta["item"]
-    #     yield self.process_item(**item)
 
 if __name__ == "__main__":
     MySpider.cza_run_spider()

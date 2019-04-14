@@ -4,7 +4,7 @@ from .url_func import get_next_page
 
 
 def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next_page_without_new_urls=False,
-                  allow_next_page=True,item={},meta=None,just_turn_page=False,
+                  allow_next_page=True,item={}, meta=None,just_turn_page=False,
                   callback=None, extend_callback=None,
                   **kwargs):
     detail_urls = kwargs.get("detail_urls", None)
@@ -16,7 +16,7 @@ def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next
         urls = [pipe(url) for url in urls]
 
     # 去重
-    new_urls = [url for url in urls if not spider.collection.count({"URL": url})]
+    new_urls = [url for url in urls if not spider.collection.count({"url": url})]
     print("共%d条其中%d条未爬" % (len(urls), len(new_urls)))
     # new_urls = [url for url in urls if not spider.source_coll.count({"URL": url})]
     if not just_turn_page:
@@ -31,7 +31,7 @@ def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next
                 item.setdefault("url", url)
                 yield spider.process_item(**item)
     # 未做去重，增量是个大问题
-    if allow_next_page and new_urls or (urls and next_page_without_new_urls) or just_turn_page:
+    if allow_next_page and new_urls or (urls and next_page_without_new_urls):
         yield Request(get_next_page(response.url, next_page_format, **kwargs), response.request.callback, meta=meta)
 
 
