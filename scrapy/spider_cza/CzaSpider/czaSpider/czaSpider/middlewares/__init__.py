@@ -1,3 +1,3 @@
 userAgentMiddleware_setting = \
-    {"ITEM_PIPELINES":
+    {"DOWNLOADER_MIDDLEWARES":
          {'czaSpider.middlewares.user_agent.baseUserAgentMiddleware': 543,}}

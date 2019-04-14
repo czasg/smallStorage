@@ -23,5 +23,4 @@ def housePriceItem(**kwargs):
     item["house_floor"] = kwargs.pop('house_floor', None)
     item["house_scale"] = kwargs.pop('house_scale', None)
     item["distance_from_subway"] = kwargs.pop('distance_from_subway', None)
-
     return item

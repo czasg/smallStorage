@@ -10,8 +10,22 @@ log.setLevel(logging.DEBUG)
 class czaSpider(scrapy.Spider):
     name = "czaSpider"
     author = "czaOrz"
+    collName = ""
+    dbName = ""
 
     item = {}
+
+    def __init__(self):
+        super(czaSpider, self).__init__()
+        self.mongoClient = get_mongo_client()
+        self.collection = self.get_collection(self.mongoClient)
+        # self.sqlite3Conn = get_sqlite3_connection()
+        # self.redisClient = get_redis_client()
+
+    @classmethod
+    def get_collection(cls, client):
+        return client["housePrice"][cls.collName]
+
     def start_requests(self):
         log.info("spider start...")
         if hasattr(self, "cza_start_request"):

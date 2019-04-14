@@ -3,35 +3,35 @@ from scrapy import Request
 from .url_func import get_next_page
 
 
-def traverse_urls(response, spider, xpath_rule=None, next_page_format=None,
-                  allow_next_page=True,item={},meta=None,no_url=False,
+def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next_page_without_new_urls=False,
+                  allow_next_page=True,item={},meta=None,just_turn_page=False,
                   callback=None, extend_callback=None,
                   **kwargs):
     detail_urls = kwargs.get("detail_urls", None)
-    if not no_url:
-        urls = detail_urls if detail_urls else data_from_xpath(response, xpath_rule, is_urls=True)
-    else:
-        urls = None
+    urls = detail_urls if detail_urls else data_from_xpath(response, xpath_rule, is_urls=True)
     urls = urls if isinstance(urls, list) else [urls]
-    # if not urls:
-    #     raise ValueError("what you get urls is None, Please check it's correctness")
     url_pipe = kwargs.get("url_pipe", None)
     urls = [url_pipe(url) for url in urls] if url_pipe else urls
     for pipe in kwargs.get("url_pipes", []):
         urls = [pipe(url) for url in urls]
 
-    for url in urls:
-        if not url:
-            continue
-        if extend_callback:
-            yield extend_callback(url)
-        elif callback:
-            yield Request(url, callback)
-        else:
-            item.setdefault("url", url)
-            yield spider.process_item(**item)
+    # 去重
+    new_urls = [url for url in urls if not spider.collection.count({"URL": url})]
+    print("共%d条其中%d条未爬" % (len(urls), len(new_urls)))
+    # new_urls = [url for url in urls if not spider.source_coll.count({"URL": url})]
+    if not just_turn_page:
+        for url in new_urls:
+            if not url:
+                continue
+            if extend_callback:
+                yield extend_callback(url)
+            elif callback:
+                yield Request(url, callback)
+            else:
+                item.setdefault("url", url)
+                yield spider.process_item(**item)
     # 未做去重，增量是个大问题
-    if allow_next_page and urls:
+    if allow_next_page and new_urls or (urls and next_page_without_new_urls) or just_turn_page:
         yield Request(get_next_page(response.url, next_page_format, **kwargs), response.request.callback, meta=meta)
 
 

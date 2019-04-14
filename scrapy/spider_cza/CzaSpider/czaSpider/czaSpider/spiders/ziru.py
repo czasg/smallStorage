@@ -3,8 +3,10 @@ from czaSpider.czaTools import *
 
 
 class MySpider(czaSpider):
-    name = "test-housePrice"
+    name = "ziru-housePrice"
     author = "czaOrz"
+    collName = get_collection_name(name, timeStr=True)
+    dbName = get_database_name(name)
     custom_settings = get_custom_settings(name)
 
     url = "http://wh.ziroom.com/z/nl/z3.html"
@@ -36,7 +38,7 @@ class MySpider(czaSpider):
 
         houses = data_from_xpath(response, '//div[@class="t_shuaichoose_order"]'
                                            '/following-sibling::ul[@id="houseList"]/li')
-
+        urls = []
         self.item["house_place"] = house_place
         for index, house in enumerate(houses):
             price = [price_template[i] for i in price_list[index]]
@@ -51,9 +53,10 @@ class MySpider(czaSpider):
                 data_from_xpath(house, './/div[@class="detail"]/p/span/text()', returnList=True)
 
             url = data_from_xpath(house, './/a[@class="t1"]/@href', is_url=True, source=response)
+            # urls.append(url)
             yield self.process_item(url=url, **self.item)
 
-        yield from traverse_urls(response, self, meta=response.meta, no_url=True,
+        yield from traverse_urls(response, self, meta=response.meta, detail_urls=urls,
                                  next_page_format="p=%d", check_current_page="?p=1")
     #         yield from traverse_urls(response, self, detail_urls=url, item=self.item,
     #                                  next_page_format="p=%d", check_current_page="?p=1",
