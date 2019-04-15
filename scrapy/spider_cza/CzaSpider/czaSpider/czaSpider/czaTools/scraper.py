@@ -59,6 +59,20 @@ def xpathJ(response, xpath_rule, sep="", stripEach=True, stripEnd=True):
 
 def data_from_xpath(response, xpath_rule, first=False, join=False,
                     returnList=False, is_url=False, is_urls=False, **kwargs):
+    """
+    从xpath中获取数据，（封装extract()、extract_first()、response.urljoin()）
+    :param response: scrapy的response数据结构 or Select数据结构，若为后者，请附带参数"source=response"指定源
+    :param xpath_rule: xpath获取规则
+    :param first: 请参考学长你自己写的xpath()功能
+    :param join: 请参考学长你自己写的jxpath()功能
+    :param returnList: extract()返回列表，参考response.xpath(xpath_rule).extract()
+    :param is_url: 获取xpath中单个url并返回response.urljoin()清洗结果，
+                    参考response.urljoin(response.xpath(xpath_rule).extract_first())
+    :param is_urls: 获取xpath中多个urls，并返回response.urljoin()清洗结果，
+                    参考[response.urljoin(url) for url in urls]，其中urls为extract()的结果
+    :param kwargs: 可指定源response，source=response
+    :return:
+    """
     if first:
         return xpathF(response, xpath_rule)
     elif join:
