@@ -10,9 +10,7 @@ from czaSpider.test_set import get_test_path
 class IMG(object):
     def __init__(self, pic, threshold=140, splitcoor=None):
         self.img = Image.open(pic)
-        self.row = 0
-        self.col = 0
-        self.imgList = []
+        self.imgList = []  # finally result
         self.img2gsi(threshold)
         self.splitImg(splitcoor)
 

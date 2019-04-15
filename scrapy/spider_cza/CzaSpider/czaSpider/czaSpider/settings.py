@@ -101,3 +101,8 @@ REDIS_INFO = {
     "port": 6380,
     "password": "123456"
 }
+
+shubo_mongo = {
+    "host": '192.168.0.91',
+    "port": 27017
+}

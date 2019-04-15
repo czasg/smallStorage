@@ -3,12 +3,13 @@ import pymongo
 import sqlite3
 import redis
 
-from czaSpider.settings import MONGO_INFO,sqlite3_INFO,REDIS_INFO
+from czaSpider.settings import MONGO_INFO,sqlite3_INFO,REDIS_INFO,shubo_mongo
 from czaSpider.czaTools.path_func import get_current_path, to_path, get_database_path
 
 
 def get_mongo_client():
     return pymongo.MongoClient(**MONGO_INFO)
+    # return pymongo.MongoClient(**shubo_mongo)
 
 def get_sqlite3_connection():
     conn = sqlite3.connect(to_path(get_database_path(), sqlite3_INFO["host"]))
