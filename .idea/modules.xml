@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/smallStorage.iml" filepath="$PROJECT_DIR$/.idea/smallStorage.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../spiderheart_new/.idea/spiderheart_new.iml" filepath="$PROJECT_DIR$/../../spiderheart_new/.idea/spiderheart_new.iml" />
     </modules>
   </component>
 </project>

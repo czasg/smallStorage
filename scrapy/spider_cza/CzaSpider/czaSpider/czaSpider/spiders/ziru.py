@@ -58,7 +58,7 @@ class MySpider(czaSpider):
             urls.append(url)
             if not self.collection.count({"url": url}):
                 yield self.process_item(url=url, **self.item)
-
+        # Duplicates urls problem, resolve the repetition
         yield from traverse_urls(response, self, meta=response.meta, detail_urls=urls,just_turn_page=True,
                                  next_page_format="p=%d", check_current_page="?p=1")
 
