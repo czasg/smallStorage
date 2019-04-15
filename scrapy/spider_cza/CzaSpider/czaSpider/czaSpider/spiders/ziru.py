@@ -40,27 +40,36 @@ class MySpider(czaSpider):
 
         houses = data_from_xpath(response, '//div[@class="t_shuaichoose_order"]'
                                            '/following-sibling::ul[@id="houseList"]/li')
+        item, items = {}, {}
         urls = []
-        self.item["house_place"] = house_place
+        item["house_place"] = house_place
         for index, house in enumerate(houses):
             price = [price_template[i] for i in price_list[index]]
-            self.item["house_price"] = int("".join([str(v) for v in price]))
+            item["house_price"] = int("".join([str(v) for v in price]))
 
-            self.item["house_name"] = data_from_xpath(house, './/a[@class="t1"]/text()', first=True)
+            item["house_name"] = data_from_xpath(house, './/a[@class="t1"]/text()', first=True)
 
-            self.item["house_area"], \
-            self.item["house_floor"], \
-            self.item["house_scale"], \
-            self.item["distance_from_subway"] = \
+            item["house_area"], \
+            item["house_floor"], \
+            item["house_scale"], \
+            item["distance_from_subway"] = \
                 data_from_xpath(house, './/div[@class="detail"]/p/span/text()', returnList=True)
 
             url = data_from_xpath(house, './/a[@class="t1"]/@href', is_url=True, source=response)
             urls.append(url)
-            if not self.collection.count({"url": url}):
-                yield self.process_item(url=url, **self.item)
-        # Duplicates urls problem, resolve the repetition
-        yield from traverse_urls(response, self, meta=response.meta, detail_urls=urls,just_turn_page=True,
-                                 next_page_format="p=%d", check_current_page="?p=1")
+            items.setdefault(url, item)
+        yield from traverse_urls(response, self, detail_urls=urls, meta=response.meta,
+                                 items=items, next_page_format="p=%d",
+                                 check_current_page="?p=1",next_page_without_new_urls=True)
 
 if __name__ == "__main__":
     MySpider.cza_run_spider()
+    # todo 定时器模块
+    # while True:
+    #     while True:
+    #         now = datetime.datetime.now()
+    #         if now.minute == 40:
+    #             break
+    #         print("waiting for time to execute code")
+    #         time.sleep(60)
+    #     MySpider.cza_run_spider()

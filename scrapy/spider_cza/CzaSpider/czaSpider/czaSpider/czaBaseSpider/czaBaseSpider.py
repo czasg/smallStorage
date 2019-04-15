@@ -13,8 +13,6 @@ class czaSpider(scrapy.Spider):
     collName = ""
     dbName = ""
 
-    item = {}
-
     def __init__(self):
         super(czaSpider, self).__init__()
         self.mongoClient = get_mongo_client()

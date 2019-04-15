@@ -1,6 +1,6 @@
 import re
 
-
+# todo BUG for turn the page
 def get_next_page(url, format=None, jump=None, diff="_", step=1, check_current_page=None, **kwargs):
     def next_page(steps):
         if isinstance(steps, str):

@@ -4,9 +4,22 @@ from .url_func import get_next_page
 
 
 def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next_page_without_new_urls=False,
-                  allow_next_page=True,item={}, meta=None,just_turn_page=False,
-                  callback=None, extend_callback=None,
+                  allow_next_page=True, meta=None,callback=None, extend_callback=None,
                   **kwargs):
+    """
+    遍历url，封装了翻页逻辑
+    :param response:
+    :param spider:
+    :param xpath_rule: xpath规则
+    :param next_page_format: 翻页的样式，如"index_%d"、"p=%d"。有去重逻辑，无新url则不会翻页
+    :param next_page_without_new_urls: 当不存在新url时，可以翻页
+    :param allow_next_page: 允许翻页
+    :param meta:
+    :param callback: 回调函数
+    :param extend_callback: 其他的回调，可以指定form请求
+    :param kwargs:
+    :return:
+    """
     detail_urls = kwargs.get("detail_urls", None)
     urls = detail_urls if detail_urls else data_from_xpath(response, xpath_rule, is_urls=True)
     urls = urls if isinstance(urls, list) else [urls]
@@ -18,18 +31,22 @@ def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next
     # 去重
     new_urls = [url for url in urls if not spider.collection.count({"url": url})]
     print("共%d条其中%d条未爬" % (len(urls), len(new_urls)))
-    # new_urls = [url for url in urls if not spider.source_coll.count({"URL": url})]
-    if not just_turn_page:
-        for url in new_urls:
-            if not url:
-                continue
-            if extend_callback:
-                yield extend_callback(url)
-            elif callback:
-                yield Request(url, callback)
-            else:
+    for url in new_urls:
+        if not url:
+            continue
+        if extend_callback:
+            yield extend_callback(url)
+        elif callback:
+            yield Request(url, callback, meta=meta)
+        else:
+            item = kwargs.get("items", {})
+            if item:
+                item = item.get(url, {})
+            if isinstance(item, dict):
                 item.setdefault("url", url)
                 yield spider.process_item(**item)
+            else:
+                raise Exception("parameter items must be an dict")
     # 未做去重，增量是个大问题
     if allow_next_page and new_urls or (urls and next_page_without_new_urls):
         yield Request(get_next_page(response.url, next_page_format, **kwargs), response.request.callback, meta=meta)
