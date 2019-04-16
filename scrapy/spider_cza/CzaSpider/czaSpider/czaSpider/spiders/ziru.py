@@ -26,8 +26,9 @@ class MySpider(czaSpider):
                                          lambda url: Request(url, self.process, meta={"house_place": house_place}))
 
     def process(self, response):
+        item = {}
         house_place = response.meta["house_place"]
-        self.item.setdefault("house_place", house_place)
+        item.setdefault("house_place", house_place)
         try:
             img, price_list = re.search('"image":"(.*?)".+offset":(\[.*?\])};', response.text).groups()
         except AttributeError:
@@ -40,7 +41,7 @@ class MySpider(czaSpider):
 
         houses = data_from_xpath(response, '//div[@class="t_shuaichoose_order"]'
                                            '/following-sibling::ul[@id="houseList"]/li')
-        item, items = {}, {}
+        items = {}
         urls = []
         item["house_place"] = house_place
         for index, house in enumerate(houses):
