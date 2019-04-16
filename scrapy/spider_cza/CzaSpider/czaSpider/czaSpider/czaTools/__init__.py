@@ -4,7 +4,7 @@ __all__ = ["re", "os", "sys", "time", "np", "pd", "shutil", "datetime", "import_
 
            "get_custom_settings", "img2num", "traverse_urls", "xpathF", "xpathJ",
            "data_from_xpath", "get_next_page", "img_download", "img_remove",
-           "get_collection_name", "get_database_name",
+           "get_collection_name", "get_database_name", "post_dict",
            "get_mongo_client", "get_sqlite3_connection", "get_redis_client"]
 
 import re, os, sys, time, datetime
@@ -24,3 +24,4 @@ from .url_func import get_next_page
 from .img_download import img_download
 from .img_remove import img_remove
 from .scraper import traverse_urls, xpathF, xpathJ, data_from_xpath
+from .constant import post_dict

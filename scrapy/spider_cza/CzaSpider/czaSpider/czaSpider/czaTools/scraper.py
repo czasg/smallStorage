@@ -1,10 +1,11 @@
 from scrapy import Request
 
 from .url_func import get_next_page
+from .constant import post_dict
 
 
 def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next_page_without_new_urls=False,
-                  allow_next_page=True, meta=None,callback=None, extend_callback=None,
+                  allow_next_page=True, meta=None, callback=None, extend_callback=None,
                   **kwargs):
     """
     遍历url，封装了翻页逻辑
@@ -47,9 +48,14 @@ def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next
                 yield spider.process_item(**item)
             else:
                 raise Exception("parameter items must be an dict")
-    # 未做去重，增量是个大问题
+
     if allow_next_page and new_urls or (urls and next_page_without_new_urls):
-        yield Request(get_next_page(response.url, next_page_format, **kwargs), response.request.callback, meta=meta)
+        if response.request.method == "GET":
+            yield Request(get_next_page(response.url, next_page_format, **kwargs), response.request.callback, meta=meta)
+        else:
+            yield Request(response.url, response.request.callback,
+                          body=get_next_page(response.request.body.decode(), next_page_format, **kwargs).encode(),
+                          **post_dict)
 
 
 def xpathF(response, xpath_rule):

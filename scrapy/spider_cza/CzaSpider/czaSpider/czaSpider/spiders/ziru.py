@@ -69,7 +69,7 @@ if __name__ == "__main__":
     # while True:
     #     while True:
     #         now = datetime.datetime.now()
-    #         if now.minute == 40:
+    #         if now.minute == 27:
     #             break
     #         print("waiting for time to execute code")
     #         time.sleep(60)

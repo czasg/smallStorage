@@ -14,34 +14,43 @@ urls = ["http","http"]
 us = ["http","http"]
 
 # 有意义的区分
+
 def func(key,value):
     pass
 [func(key,value) for key,value in dict.items()]
+
 def func(a1,a2):
     pass
 [func(a1,a2) for a1,a2 in dict.items()]
 
 # 可读的名字
+
 def generate_time_about_year_to_second():
     pass
 def genymdhms():
     pass
 
 # 可搜索的名字
+
 MONGO_INFO = {"host":"localhost", "port":27017}
+
 mi = {"host":"localhost", "port":27017}
 
 # 类名尽量为名词而非动词,函数名则尽量为动词
+
 class human(object):
     def __init__(self,height,weight):
         self.height = height
         self.weight = weight
+
     def get_height(self):
         return self.height
+
 class MakingThinking(object):
     def __init__(self,height,weight):
         self.height = height
         self.weight = weight
+
     def height(self):
         return self.height
 
@@ -66,6 +75,7 @@ def data_from_xpath(response, xpath_rule, first=False, join=False,
         return response.xpath(xpath_rule)
 
 # try-except
+
 try:
     doSomething()
 except Exception:
@@ -76,14 +86,16 @@ finally:
     done()
 
 # 垂直方向上的间隔
-def func1():
-    pass
 
-def func2():
-    pass
+# def func1():
+#     pass
+#
+# def func2():
+#     pass
+#
+# def func3():
+#     pass
 
-def func3():
-    pass
 
 def func1():
     pass
@@ -93,6 +105,7 @@ def func3():
     pass
 
 # 垂直方向上的靠近
+
 name = get_name()
 age = get_age()
 
