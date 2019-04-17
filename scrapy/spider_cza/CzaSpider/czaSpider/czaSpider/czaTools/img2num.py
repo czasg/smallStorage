@@ -118,12 +118,12 @@ def test():
 
 
 if __name__ == "__main__":
-    # test()
+    test()
 
-    import requests
-    from io import BytesIO
+    # import requests
+    # from io import BytesIO
 
-    url = "http://static8.ziroom.com/phoenix/pc/images/price/fdd00a4ec7f121b39ff49c5c234e09bes.png"
+    # url = "http://static8.ziroom.com/phoenix/pc/images/price/fdd00a4ec7f121b39ff49c5c234e09bes.png"
     # res = requests.get(url)
     # print(img2num(BytesIO(res.content)))
-    print(img2num_from_url(url))
+    # print(img2num_from_url(url))

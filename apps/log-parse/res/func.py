@@ -1,11 +1,11 @@
-import os,sys,time,datetime
+import os,sys,datetime
 
 appLog = {}		# 用于存储log文件信息
 kmsgLog = {}	# key为时间，value为文件名
 TIMEFORMAT = '%m-%d %H:%M:%S.%f'
 # 测试专用 #resultPath = os.path.join(os.path.split(os.getcwd())[0], 'result.cza')
 resultPath = os.path.join(os.getcwd(),'result.cza')
-def restoreFile(filename):	# 根据log内容做定制，取特定时间信息
+def storeFile(filename):	# 根据log内容做定制，取特定时间信息
 	start = filename.find('.')
 	fileTime = filename[start+1:start+9]
 	timeFormat = '%Y%m%d'
@@ -75,10 +75,10 @@ def mergeLog(testPath, problemTime, searchRange): # API，合并函数入口
 	for DIR,files,filenameList in os.walk(testPath):
 		for filename in filenameList:
 			if filename.find('app-log') >= 0:
-				restoreFile(filename)
+				storeFile(filename)
 				ap_count += 1
 			elif filename.find('kmsg-log') >= 0:
-				restoreFile(filename)
+				storeFile(filename)
 				kmsg_count += 1
 			else:
 				pass

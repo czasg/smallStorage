@@ -1,5 +1,4 @@
 import os
-import time
 import requests
 
 
@@ -19,5 +18,3 @@ if __name__ == "__main__":
 
     from czaSpider.czaTools.img_remove import img_remove
     print(img_remove(img))
-    import shutil
-    # os.remove(img)

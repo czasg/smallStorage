@@ -13,6 +13,7 @@ class MySpider(czaSpider):
     url = "http://sz.ziroom.com/z/nl/z3-d23008679-b612400051.html?p=1"
     # def parse(self, response):
     #     print([response.text[:100]])
+    # formdata = {"header"}
 
     # def parse(self, response):
     #     yield from traverse_urls(response, self, '//div[@class="t_shuaichoose_order"]/following-sibling::ul[@id="houseList"]/li/div[1]/a/@href',

@@ -13,7 +13,7 @@ def get_next_page(url, format=None, jump=None, diff="_", step=1, check_current_p
 
     url = _check_current_page(url, format, check_current_page) if check_current_page else url
     if not format:
-        print("无跳转样式，返回当前页")
+        print("{url} 无跳转样式，返回当前页".format(url=url))
         return url
 
     if jump is None:

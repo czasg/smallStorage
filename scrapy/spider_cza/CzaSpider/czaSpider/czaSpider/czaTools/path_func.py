@@ -12,5 +12,5 @@ def get_database_path():
     return (os.sep).join((get_current_path(), "database"))
 
 if __name__ == "__main__":
-    print(get_current_path())
-    print(to_path("cza","is","sg"))
+    print(get_current_path(__file__))
+    print(to_path("","is","sg"))

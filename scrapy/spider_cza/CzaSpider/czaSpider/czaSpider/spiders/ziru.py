@@ -38,7 +38,7 @@ class MySpider(czaSpider):
         # img_path = img_download(response.urljoin(img))
         # price_template = img2num(img_path)
         # img_remove(img_path)
-        price_template = img2num_from_url(img)
+        price_template = img2num_from_url(response.urljoin(img))
 
         houses = data_from_xpath(response, '//div[@class="t_shuaichoose_order"]'
                                            '/following-sibling::ul[@id="houseList"]/li')
@@ -62,7 +62,7 @@ class MySpider(czaSpider):
             items.setdefault(url, item)
         yield from traverse_urls(response, self, detail_urls=urls, meta=response.meta,
                                  items=items, next_page_format="p=%d",
-                                 check_current_page="?p=1", next_page_without_new_urls=True)
+                                 check_current_page="?p=1")
 
 
 if __name__ == "__main__":
