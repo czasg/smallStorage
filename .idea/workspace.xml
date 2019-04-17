@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="091caf9f-f5a8-4741-9ba9-0b3638b4683a" name="Default Changelist" comment="code review">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/smallStorage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smallStorage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/clean_code/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/documents/clean_code/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/clean_code/first.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documents/clean_code/first.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/process_data/default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documents/process_data/default.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/process_data/re.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documents/process_data/re.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/scrapy/datafilter.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documents/process_data/datafilter.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/path_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/path_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/url_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/url_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/housePrice.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/housePrice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/test_set/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/test_set/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/README" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,6 +55,7 @@
       <find>error</find>
       <find>ValueError</find>
       <find>http://wh.ziroom.com/z/nl/z3-d23009129-b1100000439.html?p=2</find>
+      <find>ctype</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Administrator\Desktop\github上库专用\smallStorage\scrapy\spider_cza\CzaSpider\czaSpider\czaSpider</dir>
@@ -66,19 +68,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/items/czaBaseItem.py" />
-        <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/items/__init__.py" />
-        <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/pipelines/__init__.py" />
-        <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/spiders/test.py" />
-        <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/czaTools/get_custom_settings.py" />
-        <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/czaBaseSpider/czaBaseSpider.py" />
-        <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/pipelines/housePrice.py" />
-        <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/czaTools/__init__.py" />
-        <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/czaTools/database/__init__.py" />
         <option value="$PROJECT_DIR$/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" />
         <option value="$PROJECT_DIR$/scrapy/scrapy_shenzhen/ziru/ziru/spiders/ziruspider.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/test_set/get_test_path.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/test_set/__init__.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaBaseSpider/scrapy.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/test-tools.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/README" />
@@ -103,28 +95,38 @@
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/middlewares/__init__.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/housePriceItem.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/settings.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/get_db.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaBaseSpider/czaBaseSpider.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/daily_timing/test.py" />
         <option value="$PROJECT_DIR$/documents/clean_code/second" />
         <option value="$PROJECT_DIR$/documents/clean_code/first.txt" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/housePrice.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py" />
         <option value="$PROJECT_DIR$/documents/clean_code/database.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/path_func.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/constant.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/__init__.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/url_func.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/scraper.py" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/test_set/__init__.py" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/__init__.py" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test1.py" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test3.py" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/README" />
+        <option value="$PROJECT_DIR$/documents/scrapy/requests.txt" />
+        <option value="$PROJECT_DIR$/documents/ML/README" />
+        <option value="$PROJECT_DIR$/documents/process_data/default.txt" />
+        <option value="$PROJECT_DIR$/documents/process_data/datafilter.txt" />
+        <option value="$PROJECT_DIR$/documents/process_data/re.txt" />
+        <option value="$PROJECT_DIR$/documents/scrapy/@decorator" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1912" />
+    <option name="y" value="176" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -151,7 +153,13 @@
               <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
               <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
               <item name="documents" type="462c0819:PsiDirectoryNode" />
-              <item name="clean_code" type="462c0819:PsiDirectoryNode" />
+              <item name="process_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="documents" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
@@ -203,20 +211,15 @@
               <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
               <item name="scrapy" type="462c0819:PsiDirectoryNode" />
               <item name="spider_cza" type="462c0819:PsiDirectoryNode" />
-              <item name="CzaSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="czaSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="czaSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="net-learning" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
               <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
               <item name="scrapy" type="462c0819:PsiDirectoryNode" />
               <item name="spider_cza" type="462c0819:PsiDirectoryNode" />
-              <item name="CzaSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="czaSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="czaSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="net-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="xlrd-xlwt" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,12 +242,13 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\github上库专用\smallStorage\scrapy\spider_cza\CzaSpider\czaSpider\czaSpider\czaTools" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\github上库专用\smallStorage\scrapy\spider_cza\CzaSpider\czaSpider\czaSpider\test_set\img2num" />
       <recent name="C:\Users\Administrator\Desktop\github上库专用\smallStorage\scrapy\spider_cza\CzaSpider\czaSpider\czaSpider\spiders" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\czaOrz\Desktop\github\smallStorage\documents\process_data" />
+      <recent name="C:\Users\Administrator\Desktop\github上库专用\smallStorage\scrapy\spider_cza\CzaSpider\czaSpider\czaSpider\czaTools" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -259,8 +263,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.url_func">
-    <configuration name="get_db" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test3">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="smallStorage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/test_set" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/test_set/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="img2num" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,7 +297,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/get_db.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -281,7 +306,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,11 +314,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/daily_timing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/daily_timing/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -302,7 +327,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -310,11 +335,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -344,34 +369,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ziru" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="smallStorage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test3" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.img2num" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.url_func" />
-        <item itemvalue="Python.ziru" />
-        <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.get_db" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -434,9 +438,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1912" y="176" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21354167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21368124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -450,7 +454,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.23450135" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.35188216" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.2857143" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -491,72 +495,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="code review" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../spiderheart_new/scrapyProj/middlewares/agent.py" />
-    <entry file="file://$PROJECT_DIR$/../../spiderheart_new/scrapyProj/middlewares/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/middlewares/database/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/middlewares/database/user_agent_pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../spiderheart_new/scrapyProj/tools/custom_settings_pool.py" />
-    <entry file="file://E:/ppythonon/Lib/site-packages/scrapy/downloadermiddlewares/useragent.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/middlewares/user_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/download_img.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img_remove.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img_download.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../spiderheart_new/scrapyProj/creditBaseSpider/mbs4settings.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/scrapy_shenzhen/ziru/ziru/spiders/ziruspider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="100" column="32" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="16" selection-start-line="5" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/ppythonon/Lib/site-packages/scrapy/spiders/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/../../spiderheart_new/scrapyProj/settings.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1905193058/_sqlite3.py" />
-    <entry file="file://$PROJECT_DIR$/../../spiderheart_new/scrapyProj/creditBaseSpider/llbasespider.py" />
-    <entry file="file://$PROJECT_DIR$/../../spiderheart_new/scrapyProj/pipelines/plastic_pipes.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/get_db_name.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -623,27 +561,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../spiderheart_new/scrapyProj/tools/scraper.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="85" column="11" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/ppythonon/Lib/site-packages/scrapy/http/request/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaBaseSpider/czaBaseSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaBaseSpider/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -652,13 +570,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/daily_timing/test.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="93" column="17" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/get_db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -666,16 +577,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/documents/clean_code/first.txt">
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/housePrice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../spiderheart/scrapyProj/tools/constant.py" />
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/url_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../spiderheart/scrapyProj/tools/urler.py" />
+    <entry file="file://$PROJECT_DIR$/../../spiderheart/scrapyProj/tools/scraper.py" />
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="93" column="17" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/test_set/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#6#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/path_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaBaseSpider/czaBaseSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/python_split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1214">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/actual-project/func-classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/database/mongodb.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/english_notebook/first.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/documents/clean_code/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
+        <state relative-caret-position="30">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
@@ -687,85 +744,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/path_func.py">
+    <entry file="file://$PROJECT_DIR$/documents/scrapy/requests.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/clean_code/first.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/housePrice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+    <entry file="file://$PROJECT_DIR$/documents/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="8" selection-start-column="1" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../spiderheart/scrapyProj/tools/constant.py">
+    <entry file="file://$PROJECT_DIR$/documents/process_data/default.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="85" selection-start-line="85" selection-end-line="85" selection-end-column="94" />
+        <state relative-caret-position="90">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/__init__.py">
+    <entry file="file://$PROJECT_DIR$/documents/ML/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#430#464#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/url_func.py">
+    <entry file="file://$PROJECT_DIR$/documents/process_data/re.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="60">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../spiderheart/scrapyProj/tools/urler.py">
+    <entry file="file://$PROJECT_DIR$/documents/process_data/datafilter.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../spiderheart/scrapyProj/tools/scraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="428" column="32" selection-start-line="428" selection-start-column="28" selection-end-line="428" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="540">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/constant.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="43" selection-start-column="43" selection-end-column="43" />
+          <caret column="92" selection-start-column="92" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/scraper.py">
+    <entry file="file://$PROJECT_DIR$/documents/scrapy/@decorator">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py">
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/leetcode/两数之和.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-120">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/leetcode/两数相加.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720">
+          <caret line="149" column="28" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="28" />
         </state>
       </provider>
     </entry>

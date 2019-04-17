@@ -1,0 +1,17 @@
+@staticmethod
+静态方法，无需传入self、cls等参数
+
+@classmethod
+需要传入cls当前类
+
+@property
+将某个对象设置为属性，如：
+@property
+def merge():
+    return self.num
+并通过setter、deleter来指定其他方法。
+@merge.setter
+def merge(self, num):
+    self.num = num
+@merge.deleter
+def func2(): pass

@@ -1,3 +1,3 @@
-{key: value for key, value in rec.items() if key not in ["_id", "more"]} # dict geberator, filt keys in []
+{key: value for key, value in rec.items() if key not in ["_id", "more"]} # dict generator, filt keys in []
 dect.get('keys', 0) # get data from dect by keys, if no key return 0
 dect.setdefault('keys', 0) # set value for key, if not exist then create a new one

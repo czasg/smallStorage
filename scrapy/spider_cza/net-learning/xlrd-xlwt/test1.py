@@ -14,10 +14,11 @@ names = data.sheet_names()
 
 行的操作（列参考行）
 nrows = table.nrows  #获取该sheet中的有效行
-table.row(i)  #返回该行中所有单元格对象组成的列表
-table.row_values(i)  #返回由该行中所有单元格的数据组成的列表
+table.row(i)  # 返回该行中所有单元格对象组成的列表
+table.row_values(i)  # 返回由该行中所有单元格的数据组成的列表
 table.row_len(i)  #返回该行的长度
 table.row_types(i)
+sheet.row(i).ctype: 0 empty,1 string, 2 number, 3 date, 4 boolean, 5 error
 
 单元格的操作
 table.cell(x,y)  # 返回单元格对象
@@ -42,18 +43,19 @@ if __name__ == "__main__":
     table = rData.sheet_by_name('database')
     nrows = table.nrows
     nclos = table.ncols
-    print(nrows,nclos)
-    print(table.row_len(0), table.row_len(1))
-    print(table.row_types(0),table.row_types(1))
-    print(table.cell(2,2), table.cell(2,2).value)
-    print(table.cell_value(2,2))
+    # print(nrows,nclos)
+    # print(table.row_len(0), table.row_len(1))
+    # print(table.row_types(0),table.row_types(1))
+    print(table.cell(2, 2), table.cell(2 ,2).value)
+    print(table.cell(2, 2), table.cell(2, 2).ctype)
+    # print(table.cell_value(2,2))
     # for i in range(nrows):
     #     print(table.row_values(i))
 
-    wData = xlwt.Workbook()
-    wData.add_sheet("test")
-    sheet1 = wData.get_sheet("test")
-    sheet1.write(0,0,"hello cza's world")
+    # wData = xlwt.Workbook()
+    # wData.add_sheet("test")
+    # sheet1 = wData.get_sheet("test")
+    # sheet1.write(0,0,"hello cza's world")
     # for i in range(nrows):
     #     r = table.row_values(i)
     #     for d in range(len(r)):

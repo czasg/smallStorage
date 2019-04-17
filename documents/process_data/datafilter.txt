@@ -10,6 +10,12 @@ response.xpath('//div[starts-with(@class,"cza")]')  # match 'cza' in the beginni
 response.xpath('//div[contains(@class,"is")]')  # match 'is' in any position, such class="czaissg"
 response.xpath('//div[@*="czaissg"]')  # match any 'div' which is equal to "czaissg"
 response.xpath('//div/span[contains(text(),"search")]')  # match 'text()'
+//E/parent::*  表示所有E节点的父节点
+//A/descendant::*  这个函数应该很强大，表示所有的后代？类似于 // 吗，那这个意义也不大啊 -- 意义不大
+//F/ancestor::*  表示所有F节点的祖先节点
+//F/self::*  表示所有为F的自身元素，这个有点意思
+//div[@class="ld_name"]//following-sibling::*  这种情况，我可以取到第一个div下面的子内容，而不是全部的兄弟节点
+/div/node()[not(a)]  这个方法，并不是说去掉div下面的所有a标签，而是去掉div下面有下级的a标签  -- 虽然说做不到去除a标签，但是可以根据a标签所特有的特点来进行剔除，如//div/a[not(@*)]  这个就是div标签下，所有不包含属性的a标签
 
 CSS
 response.css('node div[class=czasg] a::text').extract()
@@ -19,3 +25,4 @@ response.css('div[class=cza]').extract()
 response.css('*::text')
 response.css('div[class]')
 response.css('div[class=cza] *')
+

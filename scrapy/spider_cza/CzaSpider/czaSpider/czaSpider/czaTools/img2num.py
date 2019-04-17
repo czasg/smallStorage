@@ -1,5 +1,7 @@
 from PIL import Image
+from io import BytesIO
 import numpy as np
+import requests
 import operator
 import os
 
@@ -82,11 +84,22 @@ class KNN(object):
         return list
 
 
-# main interface
+# main interface from path
 def img2num(picture, threshold=140, coor=(1, 10)):
     picture = IMG(picture, threshold, splitcoor=coor)
     knn = KNN(picture.imgList)
     return knn.res
+
+
+# main interface from url
+def img2num_from_url(picture, threshold=140, coor=(1, 10)):
+    picture = IMG(url2bytes(picture), threshold, splitcoor=coor)
+    knn = KNN(picture.imgList)
+    return knn.res
+
+
+def url2bytes(url):
+    return BytesIO(requests.get(url).content)
 
 
 def get_name(file):
@@ -105,4 +118,12 @@ def test():
 
 
 if __name__ == "__main__":
-    test()
+    # test()
+
+    import requests
+    from io import BytesIO
+
+    url = "http://static8.ziroom.com/phoenix/pc/images/price/fdd00a4ec7f121b39ff49c5c234e09bes.png"
+    # res = requests.get(url)
+    # print(img2num(BytesIO(res.content)))
+    print(img2num_from_url(url))

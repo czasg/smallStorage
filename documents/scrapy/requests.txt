@@ -1,0 +1,15 @@
+传递参数
+params = {"key1":"value1", "key2:"value2"}
+res = requests.get(url, params=params).url  -> url?key1=value1&key2=value2
+
+res = requests.post(url, data={"key":"value"})
+
+二进制响应内容
+from PIL import Image
+from io import BytesIO
+i = Image.open(BytesIO(r.content))
+
+
+响应状态码
+res.status_code
+res.headers
