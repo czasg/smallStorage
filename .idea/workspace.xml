@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="091caf9f-f5a8-4741-9ba9-0b3638b4683a" name="Default Changelist" comment="code review">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/smallStorage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smallStorage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/log-parse/res/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/log-parse/res/func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/WiredTiger" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/WiredTiger.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/WiredTiger.turtle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/WiredTiger.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/WiredTigerLAS.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/_mdb_catalog.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/collection-0-5493782161290778068.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/collection-2-5493782161290778068.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/collection-4-5493782161290778068.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/diagnostic.data/metrics.2019-04-14T03-28-44Z-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/diagnostic.data/metrics.2019-04-14T03-29-58Z-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/diagnostic.data/metrics.2019-04-14T03-31-44Z-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/diagnostic.data/metrics.interim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/index-1-5493782161290778068.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/index-3-5493782161290778068.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/index-5-5493782161290778068.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/index-6-5493782161290778068.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/journal/WiredTigerLog.0000000002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/mongod.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/sizeStorer.wt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/storage.bson" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img_download.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img_download.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/path_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/path_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/url_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/url_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/english_notebook/first.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,9 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/test-tools.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/README" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/README" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/__init__.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/czaBaseItem.py" />
         <option value="$PROJECT_DIR$/../../spiderheart_new/scrapyProj/tools/urler.py" />
@@ -142,6 +110,9 @@
         <option value="$PROJECT_DIR$/apps/log-parse/res/func.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/xlsx2dict.py" />
+        <option value="$PROJECT_DIR$/documents/kaoyan/数学/前言.txt" />
+        <option value="$PROJECT_DIR$/documents/kaoyan/数学/笔记" />
+        <option value="$PROJECT_DIR$/documents/kaoyan/数学/first-函数的概念" />
       </list>
     </option>
   </component>
@@ -159,7 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,13 +146,14 @@
               <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
               <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
               <item name="documents" type="462c0819:PsiDirectoryNode" />
-              <item name="process_data" type="462c0819:PsiDirectoryNode" />
+              <item name="kaoyan" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
               <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
               <item name="documents" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="kaoyan" type="462c0819:PsiDirectoryNode" />
+              <item name="数学" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
@@ -248,6 +219,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -518,15 +490,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="code review" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaBaseSpider/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/daily_timing/test.py" />
-    <entry file="file://$PROJECT_DIR$/../../spiderheart/scrapyProj/tools/urler.py" />
     <entry file="file://$PROJECT_DIR$/../../spiderheart/scrapyProj/tools/scraper.py" />
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -721,9 +684,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/excel2dict.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/excel2dict.py" />
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -867,6 +828,27 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/kaoyan/数学/笔记">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/kaoyan/数学/first-函数的概念">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/kaoyan/数学/前言.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>
