@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+df = pd.DateFrame("column1": column1, "column2": column2)  # 使用具体的list创建dateframe
+df.drop_duplicates(["column1", "column2"])  # 删除此两栏中的重复
+df.pivot(index="index", columns="column1", values="column2")  # 与groupby方法相似，重新构建一个df，以index为索引，以column1为栏，以column2为值
+df.groupby("name")["values"].sum()  # 以name重新建索引，以values为值进行求和，作为输出值显示
