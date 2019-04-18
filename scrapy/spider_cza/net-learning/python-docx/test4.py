@@ -14,11 +14,24 @@ def test():
     nrows = len(table.row_cells(0))
     ncols = len(table.column_cells(0))
     print(nrows, ncols)
+    # for i in range(ncols):
+    #     for j in range(nrows):
+    #         table.cell(i, j).text = table.cell(i, j).text + 'cza'
+    #         print(table.cell(i,j), i, j, table.cell(i,j).text)
+    pool = []
+    # for i in range(ncols):
+    #     for cell in table.row_cells(i):
+    #         if cell not in pool:
+    #             pool.append(cell)
+    #             cell.text += cell.text + 'cza'
+    pool = []
+    for i in range(nrows):
+        print(table.column_cells(i))
+        # for cell in table.column_cells(i):
+        #     print(cell)
 
-    for i in table.rows:
-        for j in table.columns:
-            if i is j:
-                print("yes")
+
+
 
 
 if __name__ == "__main__":
