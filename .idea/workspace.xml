@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="091caf9f-f5a8-4741-9ba9-0b3638b4683a" name="Default Changelist" comment="code review">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/smallStorage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smallStorage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/README" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/project/docx_operate.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/project/docx_operate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test4.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/project/test1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/project/test1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test5.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/text.docx" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/text.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +18,89 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test6.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/project/docx_operate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-553">
+              <caret line="42" column="18" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2">
+              <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,7 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>http://wh.ziroom.com/z/nl/z3-d23008782-b611101063.html</find>
       <find>http://wh.ziroom.com/z/nl/z3-d23008782-b611101066.html</find>
       <find>http://wh.ziroom.com/z/nl/z3-d23008781-b611101068.html</find>
       <find>get_source_coll</find>
@@ -58,6 +140,7 @@
       <find>0x0000000002BBE198</find>
       <find>0x0000000009A67C88</find>
       <find>merged_cells</find>
+      <find>cza</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Administrator\Desktop\github上库专用\smallStorage\scrapy\spider_cza\CzaSpider\czaSpider\czaSpider</dir>
@@ -72,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img_remove.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/__init__.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/database/get_collection_name.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/get_db_name.py" />
@@ -120,17 +202,18 @@
         <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test1.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/README" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test4.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test5.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/project/docx_operate.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/README" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/project/docx_operate.py" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test5.py" />
+        <option value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test6.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -172,15 +255,6 @@
               <item name="spider_cza" type="462c0819:PsiDirectoryNode" />
               <item name="net-learning" type="462c0819:PsiDirectoryNode" />
               <item name="python-docx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="spider_cza" type="462c0819:PsiDirectoryNode" />
-              <item name="net-learning" type="462c0819:PsiDirectoryNode" />
-              <item name="python-docx" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
@@ -233,7 +307,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.docx_operate">
+  <component name="RunManager" selected="Python.test6">
     <configuration name="docx_operate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -247,27 +321,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/project/docx_operate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="smallStorage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -318,6 +371,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="smallStorage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ziru" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -341,11 +415,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.docx_operate" />
+        <item itemvalue="Python.test6" />
         <item itemvalue="Python.test5" />
+        <item itemvalue="Python.docx_operate" />
         <item itemvalue="Python.test4" />
         <item itemvalue="Python.ziru" />
-        <item itemvalue="Python.test1 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -408,9 +482,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19568452" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19546892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -421,10 +496,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32733223" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3797054" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.37960956" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.55482817" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.22993493" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -465,13 +540,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="code review" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/housePrice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/ppythonon/Lib/site-packages/scrapy/http/request/__init__.py" />
     <entry file="file://$PROJECT_DIR$/documents/scrapy/requests.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -643,37 +711,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/ppythonon/Lib/site-packages/docx/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="e#186#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/ppythonon/Lib/site-packages/docx/parts/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/ppythonon/Lib/site-packages/docx/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="91" column="31" lean-forward="true" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/ppythonon/Lib/site-packages/docx/blkcntnr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/ppythonon/Lib/site-packages/docx/api.py" />
+    <entry file="file://E:/ppythonon/Lib/site-packages/docx/parts/document.py" />
+    <entry file="file://E:/ppythonon/Lib/site-packages/docx/document.py" />
+    <entry file="file://E:/ppythonon/Lib/site-packages/docx/blkcntnr.py" />
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -683,74 +724,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test1.py">
+    <entry file="file://E:/ppythonon/Lib/site-packages/xlrd/sheet.py" />
+    <entry file="file://E:/ppythonon/Lib/site-packages/docx/table.py" />
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1158" />
+        <state relative-caret-position="150">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="390">
           <caret line="13" column="37" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test5.py">
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state>
+          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/project/docx_operate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+        <state relative-caret-position="-553">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="18" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#350#538#0" />
-            <element signature="e#415#1368#0" />
-            <element signature="e#100#613#0" />
-            <element signature="e#308#468#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="656">
           <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/test4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state relative-caret-position="2">
           <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/ppythonon/Lib/site-packages/xlrd/sheet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="154" column="77" lean-forward="true" selection-start-line="154" selection-start-column="77" selection-end-line="154" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/ppythonon/Lib/site-packages/docx/table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="13" />
         </state>
       </provider>
     </entry>
