@@ -1,0 +1,1 @@
+git chown -R root:root czaOrz  # 后面是目录，更改这个目录的权限
