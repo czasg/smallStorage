@@ -6,7 +6,7 @@ doc = Document('text.docx')
 table = doc.tables[0]
 nrows = len(table.column_cells(0))
 ncols = len(table.row_cells(0))  # print(nrows,ncols) 4-3
-print(nrows,ncols)
+# print(nrows,ncols)
 res_list = []
 for i in range(nrows):  #
     row_cells = table.row_cells(i)
@@ -33,20 +33,6 @@ for i in range(nrows):  #
     res_list.append(res)
 row_matrix = np.array(res_list)
 
-#     pool = []
-#     flag = 1
-#     for i,cell in enumerate(row_cells):
-#         if cell in pool:
-#             res[i] += flag
-#             res[i-1] += flag
-#             flag += 1
-#             continue
-#         pool.append(cell)
-#     res_list.append(res)
-# row_matrix = np.array(res_list)
-
-# print(row_matrix)
-
 
 res_list = []
 for i in range(ncols):  #
@@ -70,13 +56,7 @@ col_matrix = np.array(res_list).T
 # print(col_matrix)
 
 res = row_matrix*col_matrix
-print(res, type(res))
 
-# ix = np.isin(res, 1)
-# print(ix)
-# x,y = np.where(ix)
-# print(x,y)
-# print([(x[0],y[0]),(x[-1]),y[-1]])
 # todo check the long condition
 index = 1
 cza = []
@@ -84,9 +64,9 @@ while True:
     if index in res:
         ix = np.isin(res, index)
         x,y = np.where(ix)
-        print(x,y)
+        # print(x,y)
         aaaaa = list(zip(x,y))
-        print("aaaaa", aaaaa)
+        # print("aaaaa", aaaaa)
         # bbbbb = np.array(aaaaa)
         # print(bbbbb)
         m,n = aaaaa[0]
@@ -123,41 +103,39 @@ while True:
         index += 1
     else:
         break
-print(cza)
-# todo, review
-# index = 1
-# cza = []
-# pool = {}
-# while True:
-#     if index in res:
-#         ix = np.isin(res, index)
-#         x,y = np.where(ix)
-#         print(x,y)
-#         cza.append((x[0], x[-1], y[0], y[-1]))
-#         index += 1
-#     else:
-#         break
 # print(cza)
 
-
-
-
-# print(np.where(res>1))
-# print(np.where(res>1, 0, res))
-
-
-
-
-# resl = res.tolist()
-# res2 = res.T.tolist()
-# print(res.T,res2)
-# pool = set()
-# for list in resl:
-#     pool = pool.union(set(list))
-# print(pool, type(pool))
-#
-# for i in range(len(pool)):
-
-
-
-
+print(res, )
+print(np.where(res>0))
+x,y = np.where(res>0)
+cursor_list = list(zip(x, y))
+m, n = cursor_list[0]
+start, end = m, n
+while True:
+    n += 1  # right sep
+    if (m, n) in cursor_list:
+        m += 1
+        if (m, n) in cursor_list:
+            continue
+        m -= 1  # restore
+        continue
+    n -= 1  # restore
+    m += 1
+    if (m, n) in cursor_list:
+        continue
+    m -= 1
+    cza.append((start, m, end, n))
+    next_cursor = cursor_list[:]
+    for data in next_cursor:
+        if data == (m, n):
+            cursor_list.remove(data)
+            if cursor_list:
+                m, n = cursor_list[0]
+                start, end = m, n
+                break
+            else:
+                break
+        cursor_list.remove(data)
+    if not cursor_list:
+        break
+print(cza)
