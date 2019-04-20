@@ -1,0 +1,5 @@
+from io import StringIO, BytesIO
+在内存中进行读写，对象为string和bytes
+1、可以使用write写，再用getvalue读
+2、或者直接创建对象，再read读
+对于图片，文件等可以直接获取传入
