@@ -11,3 +11,14 @@ class CzaSpiderPipeline(object):
         # finally:
         #     return item
 
+"""
+class CzaSpiderPipeline(object):
+    def process_item(self, item, spider):
+        res = dict(item.copy())
+        return item
+        
+        sql = "create table "
+        sql = "insert " 
+
+problem: how to analyse and increase data?
+"""
