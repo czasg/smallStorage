@@ -1,4 +1,5 @@
 res = re.findall('(工作分工|个人简历)：(.*?)(?=工作分工|个人简历|$)', text, flags=re.S)
+content = re.findall('(发布日期|作者|来源).(.*?)(?=作者|来源|阅读)', content)
 以上为经典实例
 
 match：从起始位置开始查找，一次匹配

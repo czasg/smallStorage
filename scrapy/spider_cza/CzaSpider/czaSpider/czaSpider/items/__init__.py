@@ -1,4 +1,4 @@
-__all__ = ["czaBaseItem", "housePriceItem"]
+__all__ = ["housePriceItem", "jobPositionItem"]
 
-from .czaBaseItem import czaBaseItem, process_base_item
 from .housePriceItem import housePriceItem
+from .jobPositionItem import jobPositionItem
