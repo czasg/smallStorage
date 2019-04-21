@@ -23,7 +23,8 @@ def setting_plus(*settings):
 
 
 
-def get_custom_settings(name):
+def get_custom_settings(name, spider):
+    print(spider.custom_settings, 'get_custom_settings')
     return getattr(pipelines, name[name.rfind('-') + 1:] + "Pipeline_setting")
 
 

@@ -2,6 +2,7 @@ class CzaSpiderPipeline(object):
     def process_item(self, item, spider):
         res = dict(item.copy())
         return None
+        # return item
         # try:
         #     spider.collection.insert_one(res)
         # except:
@@ -10,15 +11,3 @@ class CzaSpiderPipeline(object):
         #     print("insert done")
         # finally:
         #     return item
-
-"""
-class CzaSpiderPipeline(object):
-    def process_item(self, item, spider):
-        res = dict(item.copy())
-        return item
-        
-        sql = "create table "
-        sql = "insert " 
-
-problem: how to analyse and increase data?
-"""

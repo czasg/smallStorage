@@ -7,7 +7,7 @@ class MySpider(czaSpider):
     author = "czaOrz"
     collName = get_collection_name(name, timeStr=True)
     dbName = get_database_name(name)
-    custom_settings = get_custom_settings(name)
+    # custom_settings = get_custom_settings(name)
 
     # url = "http://wh.ziroom.com/z/nl/z3.html"
     url = "http://sz.ziroom.com/z/nl/z3-d23008679-b612400051.html?p=1"

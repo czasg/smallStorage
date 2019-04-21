@@ -4,10 +4,11 @@ from czaSpider.czaTools import *
 
 class MySpider(czaSpider):
     name = "ziru-housePrice"
-    author = "czaOrz"
-    collName = get_collection_name(name, timeStr=True)
-    dbName = get_database_name(name)
-    custom_settings = get_custom_settings(name)
+    # author = "czaOrz"
+    # collName = get_collection_name(name, timeStr=True)
+    # dbName = get_database_name(name)
+    custom_settings = get_custom_settings(name, czaSpider)
+    SAVED_SOURCE = True
 
     url = "http://wh.ziroom.com/z/nl/z3.html"
 
@@ -66,13 +67,5 @@ class MySpider(czaSpider):
 
 
 if __name__ == "__main__":
-    MySpider.cza_run_spider()
-    # todo 定时器模块
-    # while True:
-    #     while True:
-    #         now = datetime.datetime.now()
-    #         if now.minute == 27:
-    #             break
-    #         print("waiting for time to execute code")
-    #         time.sleep(60)
-    #     MySpider.cza_run_spider()
+    MySpider.run_timer_task(MySpider.cza_run_spider, second=1)
+

@@ -28,5 +28,5 @@ if __name__ == "__main__":
     # import os
     # os.remove("sqlite3.db")
     client = get_mongo_client()
-    coll = client["housePrice"]["test"]
+    coll = client["save-source"]["test"]
     coll.insert_one({"test":"test"})

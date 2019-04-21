@@ -1,4 +1,3 @@
-# from czaSpider.items import czaBaseItem, process_base_item
 from czaSpider.czaTools import *
 from .czaBaseItem import czaBaseItem, process_base_item
 
