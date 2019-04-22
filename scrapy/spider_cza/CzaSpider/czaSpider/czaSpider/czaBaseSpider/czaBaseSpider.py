@@ -18,7 +18,7 @@ class czaSpider(scrapy.Spider):
     SAVED_SOURCE = False
 
     # custom_settings = init_db_setting()
-    custom_settings = None
+    # custom_settings = None
 
     def __init__(self):
         super(czaSpider, self).__init__()

@@ -1,0 +1,8 @@
+早上：起床仰卧起坐，英语阅读
+晚上：11点开始看视频（优先数学-其次ML），11点半收工，anything happen？
+
+我需要的（数博）：
+scrapy框架（中文文档）
+scrapy下载源码模块解析
+xlrd、xlwt解析excel
+python-docx解析docx
