@@ -30,7 +30,8 @@ if __name__ == "__main__":
     # sql = """select distinct age from cza"""
     # sql = """update cza set age=18 where name='chen'"""
     # sql = """delete from cza where age=18"""
-
+    # sql = """drop table source"""
+    # sql = """truncate table source""""  -- clear the table
     db.execute(sql)
     db.commit()
     db.close()

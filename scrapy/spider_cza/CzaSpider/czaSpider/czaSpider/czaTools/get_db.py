@@ -1,4 +1,5 @@
 import os
+import time
 import pymongo
 import sqlite3
 import redis
@@ -11,9 +12,19 @@ def get_mongo_client():
     return pymongo.MongoClient(**MONGO_INFO)
     # return pymongo.MongoClient(**shubo_mongo)
 
-def get_sqlite3_connection():
+def get_sqlite3_connection(timeStr=False):
+    if timeStr:
+        timeStr = time.strftime("%Y%m%d", time.localtime())
+        dbName = timeStr + '_' +  sqlite3_INFO["host"]
+        return sqlite3.connect(to_path(get_database_path(), dbName))
     conn = sqlite3.connect(to_path(get_database_path(), sqlite3_INFO["host"]))
-    return conn.cursor()
+    return conn
+
+def execute_sql(conn, sql):
+    conn.cursor().execute(sql)
+    conn.commit()
+    conn.cursor().close()
+    conn.close()
 
 def get_redis_client():
     pass
@@ -27,6 +38,14 @@ if __name__ == "__main__":
     # a = get_mongo_client()
     # import os
     # os.remove("sqlite3.db")
-    client = get_mongo_client()
-    coll = client["save-source"]["test"]
-    coll.insert_one({"test":"test"})
+
+    # client = get_mongo_client()
+    # coll = client["save-source"]["test"]
+    # coll.insert_one({"test":"test"})
+
+    conn = get_sqlite3_connection(timeStr=True)
+    # sql = """create table source (author varchar(10), more varchar(200), releaseTime varchar(20), source varchar(200), spiderName varchar(100), url varchar(100))"""
+    # sql = """drop table source"""
+    sql = """select * from source"""
+    conn.cursor().execute(sql)
+    print(conn.cursor().fetchall())

@@ -1,6 +1,7 @@
 class CzaSpiderPipeline(object):
     def process_item(self, item, spider):
         res = dict(item.copy())
+        print('housePrice')
         return None
         # try:
         #     spider.collection.insert_one(res)

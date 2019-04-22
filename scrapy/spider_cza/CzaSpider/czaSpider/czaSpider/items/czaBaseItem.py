@@ -14,6 +14,6 @@ def process_base_item(**kwargs):
     info["spiderName"] = kwargs.pop('spiderName', "czaSpider")
     info["author"] = kwargs.pop('author', "czaOrz")
     info["url"] = kwargs.pop('url', None)
-    info["releaseTime"] = kwargs.pop('releaseTime', None)
+    info["releaseTime"] = kwargs.pop('releaseTime', get_now_time())
     info["more"] = kwargs.pop('more', None)
     return info

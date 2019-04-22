@@ -10,6 +10,9 @@ def timed_task(task, day=0, hour=0, minute=0, second=0):
         time.sleep(timer)
         task()
 
+def get_now_time(timeFormat="%Y-%m-%d %H:%M:%S"):
+    return datetime.datetime.now().strftime(timeFormat)
+
 
     # while True:
     #     while True:
@@ -19,3 +22,9 @@ def timed_task(task, day=0, hour=0, minute=0, second=0):
     #         print("waiting for time to execute code")
     #         time.sleep(60)
     #     MySpider.cza_run_spider()
+
+
+if __name__ == "__main__":
+    now = datetime.datetime.now()
+    print(now, type(now))
+    print(now.strftime("%Y-%m-%d %H:%M:%S"), print(type(now.strftime("%Y-%m-%d %H:%M:%S"))))

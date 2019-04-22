@@ -20,11 +20,9 @@ def setting_plus(*settings):
     return reduce(add, settings)
 
 
-
-
-
-def get_custom_settings(name, spider):
-    print(spider.custom_settings, 'get_custom_settings')
+def get_custom_settings(name, saveSource=False):
+    if saveSource:
+        return getattr(pipelines, "sourcePipeline_setting")
     return getattr(pipelines, name[name.rfind('-') + 1:] + "Pipeline_setting")
 
 
