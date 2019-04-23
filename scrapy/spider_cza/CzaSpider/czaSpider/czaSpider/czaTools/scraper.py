@@ -112,3 +112,6 @@ def data_from_xpath(response, xpath_rule, first=False, join=False,
         return [response.urljoin(each) for each in urls if each]
     else:
         return response.xpath(xpath_rule)
+
+def strJoin(string, sepJ="", sep=None, maxsplit=-1):
+    return sepJ.join(string.split(sep, maxsplit))

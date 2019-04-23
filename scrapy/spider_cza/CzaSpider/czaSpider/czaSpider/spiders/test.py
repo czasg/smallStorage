@@ -5,8 +5,8 @@ from czaSpider.czaTools import *
 class MySpider(czaSpider):
     name = "test-housePrice"
     author = "czaOrz"
-    collName = get_collection_name(name, timeStr=True)
-    dbName = get_database_name(name)
+    collName = get_collection_name(name, timeStr=True)  # TODO, if ot exist return cls(MySpider) way to init?
+    dbName = get_database_name(name)  # TODO, if it can do self.__class__() ot init the property
     # custom_settings = get_custom_settings(name)
 
     # url = "http://wh.ziroom.com/z/nl/z3.html"
@@ -52,7 +52,7 @@ class MySpider(czaSpider):
 
     def parse(self, response):
         print(response.url)
-        yield self.process_item(url=response.url)
+        # yield self.process_item(url=response.url)
 
 if __name__ == "__main__":
     MySpider.cza_run_spider()
