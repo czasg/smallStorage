@@ -5,7 +5,7 @@ from .constant import post_dict
 
 
 def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next_page_without_new_urls=False,
-                  allow_next_page=True, meta=None, callback=None, extend_callback=None,
+                  allow_next_page=True, meta=None, callback=None, extend_callback=None, filter_diplicate=True,
                   **kwargs):
     """
     遍历url，封装了翻页逻辑
@@ -30,9 +30,15 @@ def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next
         urls = [pipe(url) for url in urls]
 
     # 去重
-    new_urls = [url for url in urls if not spider.collection.count({"url": url})]
-    print("共%d条其中%d条未爬" % (len(urls), len(new_urls)))
-    for url in new_urls:
+    if filter_diplicate:
+        new_urls = [url for url in urls if not spider.collection.count({"url": url})]
+        _urls = new_urls
+        print("共%d条其中%d条未爬" % (len(urls), len(new_urls)))
+    else:
+        new_urls = []
+        _urls = urls
+        print("未开启去重模块，默认为获取到的所有urls")
+    for url in _urls:
         if not url:
             continue
         if extend_callback:
