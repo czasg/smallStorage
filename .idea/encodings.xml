@@ -2,8 +2,10 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/documents/database/mongodb.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/documents/冷僻get点/libertyDiary/20190422.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/documents/冷僻get点/函数参数.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/excel.py" charset="GBK" />
     <file url="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/webTable.py" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/xlsx2dict.py" charset="GBK" />
     <file url="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/python-docx/README" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

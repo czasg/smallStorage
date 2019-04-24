@@ -3,7 +3,6 @@ SAVED_SOURCE_NAME = "sourceItem"
 
 post_dict = dict(method="POST", headers={'Content-Type': 'application/x-www-form-urlencoded'})
 
-
 # sql
 SQL_CREATE_TABLE = """create table if not exists source (
 author varchar(10), 

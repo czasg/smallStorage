@@ -1,7 +1,11 @@
+import re
+import html
+
 from scrapy import Request
 
-from .url_func import get_next_page
-from .constant import post_dict
+from czaSpider.czaTools.url_func import get_next_page
+from czaSpider.czaTools.constant import post_dict
+from czaSpider.czaTools.data_manipulation import arrayJoin
 
 
 def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next_page_without_new_urls=False,
@@ -22,7 +26,7 @@ def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next
     :return:
     """
     detail_urls = kwargs.get("detail_urls", None)
-    urls = detail_urls if detail_urls else data_from_xpath(response, xpath_rule, is_urls=True)
+    urls = detail_urls if detail_urls else data_from_xpath(response, xpath_rule, urls=True)
     urls = urls if isinstance(urls, list) else [urls]
     url_pipe = kwargs.get("url_pipe", None)
     urls = [url_pipe(url) for url in urls] if url_pipe else urls
@@ -64,11 +68,51 @@ def traverse_urls(response, spider, xpath_rule=None, next_page_format=None, next
                           **post_dict)
 
 
-def xpathF(response, xpath_rule):
+def data_from_xpath(response, xpath_rule, first=False, join=False, returnList=False,
+                    url=False, urls=False, article=False, **kwargs):
+    """
+    从xpath中获取数据，（封装extract()、extract_first()、response.urljoin()）
+    :param response: scrapy的response数据结构 or Select数据结构，若为后者，请附带参数"source=response"指定源
+    :param xpath_rule: xpath获取规则
+    :param first: 请参考学长你自己写的xpath()功能
+    :param join: 请参考学长你自己写的jxpath()功能
+    :param returnList: extract()返回列表，参考response.xpath(xpath_rule).extract()
+    :param is_url: 获取xpath中单个url并返回response.urljoin()清洗结果，
+                    参考response.urljoin(response.xpath(xpath_rule).extract_first())
+    :param is_urls: 获取xpath中多个urls，并返回response.urljoin()清洗结果，
+                    参考[response.urljoin(url) for url in urls]，其中urls为extract()的结果
+    :param kwargs: 可指定源response，source=response
+    :return:
+    """
+    if first:
+        return _xpathF(response, xpath_rule)
+    elif join:
+        return _xpathJ(response, xpath_rule, **kwargs)
+    elif returnList:
+        return _xpathE(response, xpath_rule)
+    elif url:
+        return _xpath_hyperlinks(response, xpath_rule, url=True, **kwargs)
+    elif urls:
+        return _xpath_hyperlinks(response, xpath_rule, urls=True, **kwargs)
+    elif article:
+        return _get_article(response, xpath_rule, **kwargs)
+    else:
+        return _xpath(response, xpath_rule)
+
+
+def _xpath(response, xpath_rule):
+    return response.xpath(xpath_rule)
+
+
+def _xpathF(response, xpath_rule):
     return response.xpath(xpath_rule).extract_first()
 
 
-def xpathJ(response, xpath_rule, sep="", stripEach=True, stripEnd=True):
+def _xpathE(response, xpath_rule):
+    return response.xpath(xpath_rule).extract()
+
+
+def _xpathJ(response, xpath_rule, sep="", stripEach=True, stripEnd=True):
     """
     使用extract获取list，并根据参数join合并
     :param response: --
@@ -86,38 +130,33 @@ def xpathJ(response, xpath_rule, sep="", stripEach=True, stripEnd=True):
     return res.strip() if stripEnd else res
 
 
-def data_from_xpath(response, xpath_rule, first=False, join=False,
-                    returnList=False, is_url=False, is_urls=False, **kwargs):
-    """
-    从xpath中获取数据，（封装extract()、extract_first()、response.urljoin()）
-    :param response: scrapy的response数据结构 or Select数据结构，若为后者，请附带参数"source=response"指定源
-    :param xpath_rule: xpath获取规则
-    :param first: 请参考学长你自己写的xpath()功能
-    :param join: 请参考学长你自己写的jxpath()功能
-    :param returnList: extract()返回列表，参考response.xpath(xpath_rule).extract()
-    :param is_url: 获取xpath中单个url并返回response.urljoin()清洗结果，
-                    参考response.urljoin(response.xpath(xpath_rule).extract_first())
-    :param is_urls: 获取xpath中多个urls，并返回response.urljoin()清洗结果，
-                    参考[response.urljoin(url) for url in urls]，其中urls为extract()的结果
-    :param kwargs: 可指定源response，source=response
-    :return:
-    """
-    if first:
-        return xpathF(response, xpath_rule)
-    elif join:
-        return xpathJ(response, xpath_rule, **kwargs)
-    elif returnList:
-        return response.xpath(xpath_rule).extract()
-    elif is_url:
-        url = xpathF(response, xpath_rule)
+def _xpath_hyperlinks(response, xpath_rule, url=False, urls=False, **kwargs):
+    if url:
+        hyperlinks = _xpathF(response, xpath_rule)
         response = kwargs.get("source", response)
-        return response.urljoin(url) if url else None
-    elif is_urls:
-        urls = response.xpath(xpath_rule).extract()
+        return response.urljoin(hyperlinks) if hyperlinks else None
+    elif urls:
+        hyperlinks = _xpathE(response, xpath_rule)
         response = kwargs.get("source", response)
-        return [response.urljoin(each) for each in urls if each]
-    else:
-        return response.xpath(xpath_rule)
+        return [response.urljoin(each) for each in hyperlinks if each]
 
-def strJoin(string, sepJ="", sep=None, maxsplit=-1):
-    return sepJ.join(string.split(sep, maxsplit))
+
+def _get_article(response, xpath_rule, **kwargs):
+    html_text = data_from_xpath(response, xpath_rule, join=True, **kwargs) \
+        .replace("\r\n", " ").replace("\n", " ")
+    html_text = _unescape(html_text)
+    text = _transform_html_to_text(html_text, **kwargs)
+    return arrayJoin(text, func=lambda x: x.strip(), strict=True, sep='\n', sepJ='\n')
+
+
+def _transform_html_to_text(html_text, div_is_line=True, **kwargs):
+    html_text = re.sub('<p.*?>|</p>|<br.*?>|</br>|<tr.*?>|</tr>', '\n', html_text, flags=re.S)
+    html_text = re.sub('<td.*?>|</td>|<th.*?>|</th>', ' ', html_text, flags=re.S)
+    if div_is_line:
+        html_text = re.sub('<div.*?>|</div>', '\n', html_text, flags=re.S)
+    res = re.sub('<.*?>', '', html_text, flags=re.S)
+    return res
+
+
+def _unescape(html_text):
+    return html.unescape(html_text)

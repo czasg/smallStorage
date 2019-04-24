@@ -6,7 +6,7 @@ import operator
 import os
 
 from czaSpider.czaTools.database import get_data_for_img2num
-from czaSpider.test_set import get_test_path
+from czaSpider.czaTools.path_func import to_path
 
 
 class IMG(object):
@@ -106,24 +106,17 @@ def get_name(file):
     return os.path.basename(file).split(".")[0]
 
 
-def test():
-    testFilePath = get_test_path(get_name(__file__))
-    for file in testFilePath:
-        result = get_name(file)
-        res = img2num(file)
-        if ''.join([str(v) for v in res]) == result:
-            print("True")
-        else:
-            print("False")
+def file_download(fileUrl):
+    project_path = os.path.dirname(os.path.dirname(__file__))
+    file_name = os.path.basename(fileUrl)
+    file_path = to_path(project_path, "dump", file_name)
+    with open(file_path, 'wb') as file:
+        file.write(requests.get(fileUrl).content)
+    return file_path
 
 
-if __name__ == "__main__":
-    test()
-
-    # import requests
-    # from io import BytesIO
-
-    # url = "http://static8.ziroom.com/phoenix/pc/images/price/fdd00a4ec7f121b39ff49c5c234e09bes.png"
-    # res = requests.get(url)
-    # print(img2num(BytesIO(res.content)))
-    # print(img2num_from_url(url))
+def file_remove(fileUrl):
+    os.remove(fileUrl)
+    if not os.path.exists(fileUrl):
+        return True
+    return file_remove(fileUrl)

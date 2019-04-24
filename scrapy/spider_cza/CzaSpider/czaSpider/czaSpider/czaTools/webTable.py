@@ -1,12 +1,18 @@
-from .scraper import data_from_xpath, strJoin
+# -*-coding:GBK -*-
+
+import numpy as np
 
 from scrapy import Selector
 
+from czaSpider.czaTools.scraper import data_from_xpath
+from czaSpider.czaTools.data_manipulation import strJoin
 
 
-
-class Td(object):
-
+class _Td(object):
+    """
+    用于管理html中每一个td属性，
+    包含简单的text文本内容，还有合并属性，暂未对其操作
+    """
     rowspan = 1
     colspan = 1
     _content = None
@@ -44,6 +50,11 @@ class Td(object):
 
 
 class TableParser(object):
+    """
+    解析网页中的Table
+    目前仅支持标准table，第一行为key，后序为value，或第一列为key，后序为value
+    也可以指定key的起始下标
+    """
     table = None
 
     def __init__(self, tr_td_array):
@@ -58,7 +69,11 @@ class TableParser(object):
         trs = data_from_xpath(table, tr_xpath) if tr_xpath else \
             data_from_xpath(table, './tr') or data_from_xpath(table, './tbody/tr')
 
-        return cls([[Td.from_table(td, get_content) for td in data_from_xpath(tr, td_xpath)] for tr in trs])
+        return cls([[_Td.from_table(td, get_content) for td in data_from_xpath(tr, td_xpath)] for tr in trs])
+
+    def transpose(self):
+        self.tr_td_array = np.array(self.tr_td_array).transpose()
+        return self
 
     def td_pipe(self, func, *args, **kwargs):
         self.tr_td_array = [[func(td, *args, **kwargs) for td in tr] for tr in self.tr_td_array]
@@ -71,7 +86,7 @@ class TableParser(object):
         self.tr_td_array = [tr for tr in self.tr_td_array if tr]
         return self
 
-    def strip(self, strict=False):
+    def strip(self, strict=False):  # targeting text of td
         for tr in self.tr_td_array:
             for td in tr:
                 td.strip(strict)

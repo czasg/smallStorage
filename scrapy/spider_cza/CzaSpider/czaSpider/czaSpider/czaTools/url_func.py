@@ -1,5 +1,9 @@
 import re
 
+"""
+get_next_page: turn the page in a specific format rule
+"""
+
 
 def get_next_page(url, format=None, jump=None, diff="_", step=1, check_current_page=None, **kwargs):
     def next_page(steps):
@@ -34,33 +38,3 @@ if __name__ == "__main__":
     for i in range(10):
         url = get_next_page(url, format="p=%d", check_current_page="?p=1")
         print(url)
-
-    # url = 'www.baidu.com/index_1.html'  # -> index_2
-    # print(get_next_page(url, format="index_%d"))
-    # url = 'www.baidu.com/index.html'  # -> index_1
-    # print(get_next_page(url, format="index_%d", jump=10))
-    # url = 'www.baidu.com/index.html'
-    # print(get_next_page(url, format="index-%d",jump=10, diff="-"))
-    # url = 'www.baidu.com/index.html'
-    # print(get_next_page(url, format="index_%d"))
-    # url = 'www.baidu.com/index.html/p'
-    # print(get_next_page(url, format="p_%d", jump=2))
-    # url = 'www.baidu.com/index.html'
-    # for i in range(10):
-    #     url = get_next_page(url, format="index%d", jump=2, diff="")
-    #     print(url)
-    # url = 'http://sz.ziroom.com/z/nl/z3-d23008679-b612400051.html'
-    # print(get_next_page(url, format="p=%d", jump=2, check_next_page="?"))
-
-    # url = 'http://sz.ziroom.com/z/nl/z3-d23008679-b612400051.html'
-    # for i in range(10):
-    #     url = get_next_page(url, format="p=%d", jump=2, check_next_page="?", diff="=")
-    #     print(url)
-
-    # url = 'http://sz.ziroom.com/z/nl/z3-d23008679-b612400051.html'
-    # print(get_next_page(url, format="p=%d", check_next_page="?p=1"))
-
-    # url = 'http://sz.ziroom.com/z/nl/z3-d23008679-b612400051.html'
-    # for i in range(10):
-    #     url = get_next_page(url, format="p=%d",check_current_page="?p=1")
-    #     print(url)

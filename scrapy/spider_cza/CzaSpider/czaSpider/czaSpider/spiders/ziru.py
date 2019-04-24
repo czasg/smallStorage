@@ -22,7 +22,7 @@ class MySpider(czaSpider):
             son_place = data_from_xpath(place, './a/text()', first=True)
             house_place = "-".join((city, area_place, son_place))
 
-            url = data_from_xpath(place, './a/@href', is_url=True, source=response)
+            url = data_from_xpath(place, './a/@href', url=True, source=response)
             yield from traverse_urls(response, self, detail_urls=url,
                                      extend_callback= \
                                          lambda url: Request(url, self.process, meta={"house_place": house_place}))
@@ -37,9 +37,6 @@ class MySpider(czaSpider):
             return
         price_list = eval(price_list)
 
-        # img_path = img_download(response.urljoin(img))
-        # price_template = img2num(img_path)
-        # img_remove(img_path)
         price_template = img2num_from_url(response.urljoin(img))
 
         houses = data_from_xpath(response, '//div[@class="t_shuaichoose_order"]'
@@ -59,7 +56,7 @@ class MySpider(czaSpider):
             item["distance_from_subway"] = \
                 data_from_xpath(house, './/div[@class="detail"]/p/span/text()', returnList=True)
 
-            url = data_from_xpath(house, './/a[@class="t1"]/@href', is_url=True, source=response)
+            url = data_from_xpath(house, './/a[@class="t1"]/@href', url=True, source=response)
             urls.append(url)
             items.setdefault(url, item)
         yield from traverse_urls(response, self, detail_urls=urls, meta=response.meta,

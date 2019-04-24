@@ -6,3 +6,5 @@ scrapy框架（中文文档）
 scrapy下载源码模块解析
 xlrd、xlwt解析excel
 python-docx解析docx
+
+20190424: 解析网页Table(done)、新增wenben函数模块解析(done)
