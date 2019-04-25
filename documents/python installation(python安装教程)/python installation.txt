@@ -1,0 +1,22 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                   #
+#    本篇为说明文档，介绍安装python3.X与pycharm     #
+#                                                   #
+#    python3.X  主要使用的开发语言与环境            #
+#    pycharm  主要使用的开发工具IDE                 #
+#                                                   #
+# # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1、安装python3.X
+参考菜鸟教程：Window 平台安装 Python篇   http://www.runoob.com/python3/python3-install.html
+
+2、安装pycharm
+参考百度教程   https://jingyan.baidu.com/article/f00622286e92f4fbd2f0c855.html
+
+3、安装python三方包
+win + R  ->  输入 
+pip install lxml
+pip install wheel
+pip install numpy
+pip install pandas
+
