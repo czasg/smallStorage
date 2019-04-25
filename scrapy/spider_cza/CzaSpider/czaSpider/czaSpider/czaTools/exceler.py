@@ -185,10 +185,14 @@ class _Sheet(object):
         if sys.platform == "win32":
             try:
                 td_td_html = self.to_html()
-                table = """<table border="1" cellspacing="0">{}<>""".format(td_td_html)
-                open_in_browser(table)
+                if not td_td_html:
+                    return
+                table = """<table border="1" cellspacing="0">{}</table>""".format(td_td_html)
+                open_in_browser(etree.fromstring(table))
             except:
                 print("open_in_browser ERROR!")
+            else:
+                print("open in browser success!")
         else:
             print("{}不支持此功能".format(sys.platform))
 
@@ -228,4 +232,10 @@ class ExcelReader(object):
 if __name__ == "__main__":
     # ExcelWrite('test.xls', 'test').array_to_excel([[1, 2, 3], [4, 5, 6], [7,8,9,10]]).save()
     # todo, test here about excel reader function
+    from czaSpider.test_set import get_test_path
+    test_sets = get_test_path(__file__)
+    for test in test_sets:
+        # print(ExcelReader.from_excel(test).to_html())
+        # print(ExcelReader.from_excel(test).to_array())
+        ExcelReader.from_excel(test).open_in_browser()
     pass

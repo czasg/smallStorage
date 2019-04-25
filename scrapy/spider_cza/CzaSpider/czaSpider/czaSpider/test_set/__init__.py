@@ -1,10 +1,12 @@
 import os
+import re
 
 from czaSpider.czaTools.path_func import get_current_path, to_path
 
 
 # interface for czaTools project
 def get_test_path(filename):
+    filename = re.search('.*/(.*)\..*', filename).group(1) if '/' in filename else filename
     setPath = to_path(get_current_path(__file__), filename)
     testSet = os.listdir(setPath)
     res = [to_path(setPath, file) for file in testSet]

@@ -13,6 +13,7 @@ PubkeyAuthentication yes
 AuthorizedKeysFile .ssh/authorized_keys
 
 本地端拉代码，并注册ssh
-ssh czaOrz@192.168.137.168 'cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
+ssh czaOrz@47.101.42.79 'cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
+git clone czaOrz@47.101.42.79:/gits/czaOrz.git
 
 
