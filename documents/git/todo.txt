@@ -1,0 +1,22 @@
+mkdir xxx
+git init --bare test.git
+chmod -R 777 test.git
+useradd gituser1
+passwd gituser1 1234
+useradd gituser2
+passwd gituser2 1234
+
+vim /etc/passwd
+gituser1:x:1006:1008::/home/gituser1:/bin/bash  -> ban to sign in by git
+gituser1:x:1006:1008::/home/gituser1:/bin/git-shell
+
+groupadd gitgroup
+usermod -G gitgroup gituser1
+usermod -G gitgroup gituser2
+
+cat /etc/group  -> check if it success
+
+chown -R czaOrz:gitgroup /home/git/test.git  -> it mean self owner is czaOrz and group is gitgroup
+
+done!
+you can git use "clone username@{IP}:/path/to/.git" to fetch git
