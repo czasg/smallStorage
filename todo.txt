@@ -1,0 +1,12 @@
+已有仓：
+Django、Scrapy、ML、practice
+
+现在此仓里面已无Django，但是有一些文档和代码
+需要慢慢将这些转移出去
+
+代码包含：
+测试用的（内含数据库的操作，dispatch库，twisted库）-> practiceStorage
+leetcode代码  -> smallStroage，外面吧（重命名，前面带上数字，标记序号）
+网络学习的代码（lxml，numpy等，docx，thensorflow，xlrd等） -> practiceStorage（thensorflow后序再转到ML中）
+一个笔记，里面装的是re正则代码  -> practiceStorage
+command.txt -> practiceStorage

@@ -14,7 +14,7 @@ document文档模块
 该git需要一个代号名：什么时候完成，就以之为代号--509版本
 最好linux上放release版本，而github上放trunk版本
 1、整理python入门文档，包含安装python，安装pycharm，环境配置等信息，app可放置百度云中整理（整理中）
-2、学会如何创建新git，在github中新建。查看如何建立不同的用户，不知道github可以不，不行就linux做
+2、学会如何创建新git，在github中新建。查看如何建立不同的用户，不知道github可以不，不行就linux做（done）
 3、整理数据模块，将mongo中的数据，转化为json模块存放，并写明备注
 4、基础信息完善，是否可以拉人加入？
 
