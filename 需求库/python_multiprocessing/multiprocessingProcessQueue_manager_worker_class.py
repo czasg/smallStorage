@@ -70,10 +70,6 @@ class WorkFlow:
     def process_task(self, **kwargs):
         self.worker.receive_task(**kwargs)
 
-    def multiprocess(self, func, *args):
-        p = Process(target=func, args=args)
-        p.start()
-
     def single_flow(self, *args, **kwargs):
         self.create_task(*args)
         self.process_task(**kwargs)

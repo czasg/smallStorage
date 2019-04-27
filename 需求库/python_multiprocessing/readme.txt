@@ -20,3 +20,5 @@ worker.start()
 manager.start()
 worker.join()
 manager.join()
+
+multiprocessing.cpu_count()  -> in this way, you will get the statistic num of you cup
