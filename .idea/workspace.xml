@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="091caf9f-f5a8-4741-9ba9-0b3638b4683a" name="Default Changelist" comment="code review">
-      <change beforePath="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingProcessQueue_manager_worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingProcessQueue_manager_worker_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessing_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/smallStorage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smallStorage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/需求库/python_threading/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_threading/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,70 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/需求库/python_threading/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/需求库/python_threading/threadingThreadLocalLock_manager_worker_class.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="85" column="19" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python36/Lib/queue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python36/Lib/threading.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="757" column="21" selection-start-line="757" selection-start-column="17" selection-end-line="757" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingProcessQueue_manager_worker_class.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="5" selection-start-line="3" selection-end-line="3" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="23" column="86" lean-forward="true" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -133,9 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaBaseSpider/__init__.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/__init__.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/dump/__init__.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/dump/test/__init__.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/sourceItem.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/__init__.py" />
@@ -179,11 +116,14 @@
         <option value="$PROJECT_DIR$/documents/冷僻get点/libertyDiary/20190425.txt" />
         <option value="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessing_1.py" />
         <option value="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessProcessQueue_manager_worker.py" />
-        <option value="$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt" />
         <option value="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingProcessQueue_manager_worker.py" />
-        <option value="$PROJECT_DIR$/需求库/python_threading/readme.txt" />
         <option value="$PROJECT_DIR$/需求库/python_threading/threadingThreadLocalLock_manager_worker.py" />
         <option value="$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer.py" />
+        <option value="$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py" />
+        <option value="$PROJECT_DIR$/需求库/python_threading/readme.txt" />
+        <option value="$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt" />
+        <option value="$PROJECT_DIR$/需求库/python_multiprocessing/test.py" />
+        <option value="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingManager_Master_Worker_class.py" />
       </list>
     </option>
   </component>
@@ -201,7 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,6 +169,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,8 +209,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.threadingThreadLocalLock_manager_worker">
-    <configuration name="exceler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.multiprocessingManager_Master_Worker_class">
+    <configuration name="multiprocessingManager_Master_Worker_class" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -278,11 +218,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_multiprocessing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/exceler.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingManager_Master_Worker_class.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,7 +252,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,11 +260,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/dump" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_multiprocessing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Administrator\Desktop\github上库专用\smallStorage\scrapy\spider_cza\net-learning\lxml\test1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_multiprocessing/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -333,7 +273,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="threadingCondition_consumer_producer_func" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -341,11 +281,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_threading" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/test1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -377,11 +317,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.multiprocessingManager_Master_Worker_class" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.threadingCondition_consumer_producer_func" />
         <item itemvalue="Python.threadingThreadLocalLock_manager_worker" />
         <item itemvalue="Python.multiprocessingProcessQueue_manager_worker" />
-        <item itemvalue="Python.exceler" />
-        <item itemvalue="Python.test1 (1)" />
-        <item itemvalue="Python.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -444,9 +384,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12486828" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32068452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -460,7 +400,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.55482817" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.45770064" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.42389524" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -481,12 +421,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="code review" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/ppythonon/Lib/site-packages/xlutils/copy.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/zlzp.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/decorator_manager.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/ziru.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img_download.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img_remove.py" />
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/__init__.py" />
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" />
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/path_func.py" />
@@ -604,66 +538,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/multiprocessing/queues.py">
+    <entry file="file://C:/Program Files/Python36/Lib/multiprocessing/queues.py" />
+    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessing_1.py" />
+    <entry file="file://C:/Program Files/Python36/Lib/threading.py" />
+    <entry file="file://C:/Program Files/Python36/Lib/queue.py" />
+    <entry file="file://E:/ppythonon/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="103" column="37" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessing_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="23" column="86" lean-forward="true" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="757" column="21" selection-start-line="757" selection-start-column="17" selection-end-line="757" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/queue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingProcessQueue_manager_worker_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="5" selection-start-line="3" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="756" column="8" selection-start-line="756" selection-start-column="8" selection-end-line="756" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/需求库/python_threading/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+        <state relative-caret-position="339">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/需求库/python_threading/threadingThreadLocalLock_manager_worker_class.py">
+    <entry file="file://$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="85" column="19" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="19" />
+        <state relative-caret-position="110">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py">
+    <entry file="file://E:/ppythonon/Lib/queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="89" column="13" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingManager_Master_Worker_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_threading/threadingThreadLocalLock_manager_worker_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1034">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/multiprocessing/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/ppythonon/Lib/multiprocessing/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="456" column="6" selection-start-line="456" selection-start-column="6" selection-end-line="456" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingProcessQueue_manager_worker_class.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>

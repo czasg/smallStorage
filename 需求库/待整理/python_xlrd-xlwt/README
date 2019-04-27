@@ -1,0 +1,20 @@
+关于xlrd和xlwt的一些用法
+
+比如在一堆数据中如何做到分类
+可以先获取对应栏的下标，记录在一个字典里面
+然后通过range(1,sheet.nrows)和sheet.row_values(i)来遍历每一行的数据
+然后匹配到想要写入的index，通过sheet.write(x,y,value)进行写值
+
+sheet.row(index) 表示获取该行的单元格对象数据，可以使用for来遍历，
+row_values()不同，他获取的是具体的值而非单元格对象
+
+ctype属性: 0 empty,1 string, 2 number, 3 date, 4 boolean, 5 error
+value表示获取值
+
+使用sheet.merged_cells可以获取页面中所有的合并单元格坐标，
+类似[(4,5,2,4), (5,6,2,4)]， 表示行4-5（不包含5？），列2-4（不包含4？），为合并单元格。因为他是按0开始算的
+
+rowspan: 属性，表示某一cell，合并多少行
+colspan
+
+

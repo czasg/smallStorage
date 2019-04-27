@@ -1,0 +1,45 @@
+Hello everyone. I'm facing this above problem when my input image is the
+attached file.
+
+My os: ubuntul4.04
+
+My input image: in attached file(which is a .png file)
+
+My command: tesseract 0a2d.png out
+
+My output: "Tesseract Open Source OCR Engine v4.00.00alpha with
+Leptonica
+
+Warning. Invalid resolution 0 dpi. Using 70
+instead.
+
+Estimating resolution as 281
+
+Empty page!!
+
+Estimating resolution as 281
+
+Empty page!!"
+
+ 
+
+ 
+
+This engine is supposed to give the correct answer "0a2d"
+I'm new to this ocr engine, so anyone can help me with this problem, many
+thanks:)
+
+You received this message because you are subscribed to the Google Groups
+"tesseract-ocr" group.
+
+To unsubscribe from this group and stop receiving emails from it, send an
+email
+
+to tesseract-ocr+unsubscr. . .@googlegroups.com.
+
+To post to this group, send email to tesseract-ocr@goog
+
+ 
+
+egroups.com.
+

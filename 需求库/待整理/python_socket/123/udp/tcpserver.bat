@@ -1,0 +1,3 @@
+python tcpserver.py
+
+pause
