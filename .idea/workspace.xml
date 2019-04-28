@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="091caf9f-f5a8-4741-9ba9-0b3638b4683a" name="Default Changelist" comment="code review">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/smallStorage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smallStorage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/需求库/python_threading/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_threading/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,16 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/dump/test/__init__.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/sourceItem.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/__init__.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/housePriceItem.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/get_db_name.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/__init__.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/zlzp.py" />
-        <option value="$PROJECT_DIR$/documents/clean_code/speech draft" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/housePricePipeline.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/get_custom_settings.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/cza_test/database/sqlite3_learning.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/timer_task.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/czaBaseItem.py" />
@@ -124,14 +109,23 @@
         <option value="$PROJECT_DIR$/需求库/python_multiprocessing/readme.txt" />
         <option value="$PROJECT_DIR$/需求库/python_multiprocessing/test.py" />
         <option value="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingManager_Master_Worker_class.py" />
+        <option value="$PROJECT_DIR$/需求库/python_datetime/datetime_class.py" />
+        <option value="$PROJECT_DIR$/需求库/python_datetime/readme.txt" />
+        <option value="$PROJECT_DIR$/需求库/python_collections/readme.txt" />
+        <option value="$PROJECT_DIR$/需求库/python_hashlib/readme.txt" />
+        <option value="$PROJECT_DIR$/需求库/python_contextlib/readme.txt" />
+        <option value="$PROJECT_DIR$/需求库/python_pillow/pillow_generate_pictures.py" />
+        <option value="$PROJECT_DIR$/需求库/python_pillow/pillow_generate_pictures_func.py" />
+        <option value="$PROJECT_DIR$/需求库/python_pillow/readme.txt" />
+        <option value="$PROJECT_DIR$/需求库/python_requests/readme.txt" />
+        <option value="$PROJECT_DIR$/需求库/python_chardet/readme.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="683" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -152,18 +146,6 @@
               <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
               <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
               <item name="需求库" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
-              <item name="需求库" type="462c0819:PsiDirectoryNode" />
-              <item name="python_multiprocessing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallStorage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallStorage" type="462c0819:PsiDirectoryNode" />
-              <item name="需求库" type="462c0819:PsiDirectoryNode" />
-              <item name="python_threading" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.multiprocessingManager_Master_Worker_class">
+  <component name="RunManager" selected="Python.pillow_generate_pictures_func">
     <configuration name="multiprocessingManager_Master_Worker_class" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -231,7 +213,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multiprocessingProcessQueue_manager_worker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pillow_generate_pictures_func" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -239,11 +221,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_multiprocessing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_pillow" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\czaOrz\Desktop\github\smallStorage\需求库\python_multiprocessing\multiprocessingProcessQueue_manager_worker_class.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_pillow/pillow_generate_pictures_func.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -317,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pillow_generate_pictures_func" />
         <item itemvalue="Python.multiprocessingManager_Master_Worker_class" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.threadingCondition_consumer_producer_func" />
         <item itemvalue="Python.threadingThreadLocalLock_manager_worker" />
-        <item itemvalue="Python.multiprocessingProcessQueue_manager_worker" />
       </list>
     </recent_temporary>
   </component>
@@ -384,9 +366,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="683" y="0" width="683" height="728" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32068452" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.30542636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -396,11 +378,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32733223" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.55482817" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32605043" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5546219" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.42389524" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.42352942" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -421,53 +403,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="code review" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/img2num.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/path_func.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/scraper.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/spiders/test1.py" />
-    <entry file="file://$PROJECT_DIR$/documents/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/documents/冷僻get点/函数参数.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="19" lean-forward="true" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/documents/冷僻get点/io" />
-    <entry file="file://$PROJECT_DIR$/documents/冷僻get点/io.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/documents/冷僻get点/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/xlrd-xlwt/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/dump/test.py" />
-    <entry file="file://E:/ppythonon/Lib/site-packages/lxml/html/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/data_manipulation.py" />
     <entry file="file://E:/ppythonon/Lib/site-packages/xlrd/__init__.py" />
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/leetcode/两数之和.py" />
     <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/leetcode/两数相加.py" />
@@ -597,16 +532,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/test.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/multiprocessing/managers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -623,6 +549,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingProcessQueue_manager_worker_class.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_datetime/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_datetime/datetime_class.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_collections/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_hashlib/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_contextlib/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/ppythonon/Lib/site-packages/PIL/ImageDraw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="261" column="21" selection-start-line="261" selection-start-column="19" selection-end-line="261" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_pillow/test1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_pillow/test.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_pillow/test2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_pillow/test3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_pillow/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_pillow/pillow_generate_pictures_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_requests/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_chardet/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
