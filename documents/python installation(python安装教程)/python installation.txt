@@ -1,10 +1,10 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # #
-#                                                   #
-#    本篇为说明文档，介绍安装python3.X与pycharm     #
-#                                                   #
-#    python3.X  主要使用的开发语言与环境            #
-#    pycharm  主要使用的开发工具IDE                 #
-#                                                   #
+#                                                                            
+#    本篇为说明文档，介绍安装python3.X与pycharm  
+#                                                                            
+#    python3.X  主要使用的开发语言与环境                
+#    pycharm  主要使用的开发工具IDE                      
+#                                                                           
 # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 1、安装python3.X
@@ -13,10 +13,16 @@
 2、安装pycharm
 参考百度教程   https://jingyan.baidu.com/article/f00622286e92f4fbd2f0c855.html
 
-3、安装python三方包
+3、安装python三方包(scrapy)
 win + R  ->  输入 
-pip install lxml
 pip install wheel
+pip install lxml
+pip install Twisted-19.2.0-cp37-cp37m-win32.whl   -> just for python version 3.7, please choose 3.6 if you are
+pip install pywin32
+pip install scrapy
 pip install numpy
 pip install pandas
-
+pip install Pillow
+pip install docx
+pip install xlutils
+pip install Django
