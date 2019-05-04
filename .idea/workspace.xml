@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="091caf9f-f5a8-4741-9ba9-0b3638b4683a" name="Default Changelist" comment="code review">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/需求库/python_datetime/datetime_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_datetime/datetime_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/需求库/python_datetime/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_datetime/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/需求库/python_pillow/test3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/需求库/python_pillow/test3.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,10 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/cza_test/database/sqlite3_learning.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/timer_task.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/items/czaBaseItem.py" />
-        <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/get_db.py" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/pipelines/sourcePipeline.py" />
         <option value="$PROJECT_DIR$/documents/kaoyan/数学/first-函数的概念.txt" />
         <option value="$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaBaseSpider/czaBaseSpider.py" />
@@ -122,6 +115,10 @@
         <option value="$PROJECT_DIR$/需求库/python_chardet/readme.txt" />
         <option value="$PROJECT_DIR$/需求库/python_datetime/datetime_class.py" />
         <option value="$PROJECT_DIR$/需求库/python_datetime/readme.txt" />
+        <option value="$PROJECT_DIR$/需求库/python_asyncio/hello_world.py" />
+        <option value="$PROJECT_DIR$/需求库/python_asyncio/hello_world_threading.py" />
+        <option value="$PROJECT_DIR$/需求库/python_asyncio/html_from_sina.py" />
+        <option value="$PROJECT_DIR$/需求库/python_aiohttp/hello.py" />
       </list>
     </option>
   </component>
@@ -159,7 +156,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../blogs" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -194,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.datetime_class">
+  <component name="RunManager" selected="Python.hello">
     <configuration name="datetime_class" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,7 +213,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multiprocessingManager_Master_Worker_class" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,11 +221,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_multiprocessing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_aiohttp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_multiprocessing/multiprocessingManager_Master_Worker_class.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_aiohttp/hello.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,7 +234,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pillow_generate_pictures_func" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hello_world" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,11 +242,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_pillow" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_asyncio" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_pillow/pillow_generate_pictures_func.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_asyncio/hello_world.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -258,7 +255,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hello_world_threading" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,11 +263,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_multiprocessing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_asyncio" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_multiprocessing/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_asyncio/hello_world_threading.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -279,7 +276,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="threadingCondition_consumer_producer_func" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="html_from_sina" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smallStorage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,11 +284,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_threading" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/需求库/python_asyncio" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_threading/threadingCondition_consumer_producer_func.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/需求库/python_asyncio/html_from_sina.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -302,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hello" />
+        <item itemvalue="Python.html_from_sina" />
+        <item itemvalue="Python.hello_world_threading" />
+        <item itemvalue="Python.hello_world" />
         <item itemvalue="Python.datetime_class" />
-        <item itemvalue="Python.pillow_generate_pictures_func" />
-        <item itemvalue="Python.multiprocessingManager_Master_Worker_class" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.threadingCondition_consumer_producer_func" />
       </list>
     </recent_temporary>
   </component>
@@ -371,7 +368,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18080357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3764881" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -382,10 +379,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32605043" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5546219" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5522876" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.36824876" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.30278233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -406,20 +403,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="code review" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/leetcode/两数相加.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/leetcode/字符串转换整数.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/net-learning/lxml/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/xpather.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/test_set/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/exceler.py" />
-    <entry file="file://$PROJECT_DIR$/scrapy/spider_cza/CzaSpider/czaSpider/czaSpider/czaTools/webTable.py" />
-    <entry file="file://$PROJECT_DIR$/documents/冷僻get点/libertyDiary/20190425.txt" />
     <entry file="file://$PROJECT_DIR$/documents/冷僻get点/libertyDiary/20190422.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -598,20 +581,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/需求库/python_datetime/datetime_class.py">
+    <entry file="file://$PROJECT_DIR$/需求库/python_datetime/datetime_class.py" />
+    <entry file="file://$PROJECT_DIR$/需求库/python_datetime/readme.txt" />
+    <entry file="file://E:/ppythonon/Lib/asyncio/events.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="195">
+          <caret line="681" column="4" selection-start-line="681" selection-start-column="4" selection-end-line="681" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/ppythonon/Lib/asyncio/coroutines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="235" column="27" selection-start-line="235" selection-start-column="16" selection-end-line="235" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_asyncio/hello_world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/ppythonon/Lib/site-packages/aiohttp/web_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1316">
+          <caret line="283" column="8" selection-start-line="283" selection-start-column="8" selection-end-line="283" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_asyncio/hello_world_threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/需求库/python_datetime/readme.txt">
+    <entry file="file://$PROJECT_DIR$/需求库/python_asyncio/html_from_sina.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="121">
+          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/ppythonon/Lib/site-packages/aiohttp/web_response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="441" column="67" selection-start-line="441" selection-start-column="55" selection-end-line="441" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/需求库/python_aiohttp/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
