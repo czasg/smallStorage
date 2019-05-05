@@ -72,3 +72,6 @@ $ git tag -d v0.1   ->  如果标签打错了，也可以删除：
 $ git push origin v1.0    ->  推送某个标签到远程
 $ git push origin --tags    ->  一次性推送全部尚未推送到远程的本地标签
 $ git push origin :refs/tags/<tagname>   ->  可以删除一个远程标签。
+
+
+$ git config --global alias.st status   -> 配置别名, 告诉Git，以后st就表示status
