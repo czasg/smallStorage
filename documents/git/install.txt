@@ -1,0 +1,74 @@
+linux-ubun:
+sudo apt-get install git
+
+win:
+git-bash
+
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+
+$ git add file1.txt
+$ git add file2.txt file3.txt
+$ git commit -m "add 3 files."
+
+$ git log
+$ git log --pretty=oneline
+
+$ git reset --hard HEAD^    ->   把当前版本append GPL回退到上一个版本add distributed
+
+$ git reset --hard 1094a...    ->   指定回退对应的版本，后面接的版本id
+HEAD is now at 83b0afe append GPL
+
+$ git reflog   ->  记录你的每一次命令，如果你忘了commit-id，可以通过此命令找到对应的，然后在回退过去
+
+HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id
+穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本
+
+$ git diff HEAD -- readme.txt   -> 可以查看工作区和版本库里面最新版本的区别
+
+$ git checkout -- file   -> 可以丢弃工作区的修改, 让这个文件回到最近一次git commit或git add时的状态。
+一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+
+$ git reset HEAD readme.txt   -> 可以把暂存区的修改撤销掉（unstage），重新放回工作区,再用git status查看一下，现在暂存区是干净的，工作区有修改
+场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。
+场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+
+
+$ ssh-keygen -t rsa -C "youremail@example.com"
+一路回车, 可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人
+
+$ git remote add origin git@github.com:michaelliao/learngit.git
+
+$ git checkout -b dev   -> git checkout命令加上-b参数表示创建并切换
+$ git merge dev   -> 切换回master分支后, 把dev分支的工作成果合并到master分支上, git merge命令用于合并指定分支到当前分支
+$ git branch -d dev   -> 合并完成后，就可以放心地删除dev分支了：
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
+
+
+
+$ git stash   -> 把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+$ git stash list   -> 看工作现场存到哪去了
+$ git stash apply stash@{0}   -> 恢复后，stash内容并不删除，你需要用git stash drop来删除
+$ git stash pop   -> 恢复的同时把stash内容也删了
+
+
+$ git tag   ->  可以查看所有标签
+$ git tag <tagname>   ->  用于新建一个标签，默认为HEAD，也可以指定一个commit id
+$ git tag -a <tagname> -m "blablabla..."    -> 可以指定标签信息
+$ git show v0.1
+$ git tag -d v0.1   ->  如果标签打错了，也可以删除：
+$ git push origin v1.0    ->  推送某个标签到远程
+$ git push origin --tags    ->  一次性推送全部尚未推送到远程的本地标签
+$ git push origin :refs/tags/<tagname>   ->  可以删除一个远程标签。
