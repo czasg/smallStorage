@@ -1,0 +1,6 @@
+针对liao老师的文档，每一篇都是经典
+python已经看了大概
+后续还有git、sql、js
+在公司可以看python，在家观看顺序：git->sql->js
+
+在公司还是有限看scrapy官方文档
