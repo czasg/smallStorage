@@ -1,0 +1,31 @@
+import aiohttp
+
+async with aiohttp.ClientSession() as session:
+    async with session.get('http://httpbin.org/get') as resp:
+        print(resp.status)
+        print(await resp.text())
+
+
+params = {'key1': 'value1', 'key2': 'value2'}   # 'http://httpbin.org/get?key2=value2&key1=value1'
+params = [('key', 'value1'), ('key', 'value2')]   # if same key, by this way you can get same result
+
+session.get('http://httpbin.org/get', params=params)   
+session.post('http://httpbin.org/post', data={'data':'data'})
+
+resp.status
+await resp.text()   # await resp.text(encoding='windows-1251')
+await resp.read()  # return the bytes of body
+
+
+
+
+
+
+
+
+
+
+
+
+
+
