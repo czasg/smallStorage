@@ -6,7 +6,7 @@ python已经看了大概
 在公司还是有限看scrapy官方文档
 
 
-orm基本差不多了，一些sql还不太清楚如何执行的
+orm基本差不多了，一些sql还不太清楚如何执行的  -- aiomysql
 可以先从aiohttp入手，整理client和server
 整理jinja2模块如何使用
 那后端框架基本差不多了，就是前段的知识需要开始积累了
