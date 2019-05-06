@@ -1,0 +1,124 @@
+# easy work
+from aiohttp import web
+async def hello(request):
+    return web.Response(text="Hello, world")
+app = web.Application()  # http://localhost:8080/
+app.add_routes([web.get('/', hello)])  # app.add_routes([web.route('*', '/path', all_handler)])  -> anyway of request
+web.run_app(app)
+
+
+# more easy for routes
+routes = web.RouteTableDef()
+@routes.get('/')
+async def hello(request):
+    return web.Response(text="Hello, world")
+app = web.Application()
+app.add_routes(routes)
+web.run_app(app)
+
+
+# command line
+python -m aiohttp.web -H localhost -P 8080 package.module:func
+def func():
+    app = web.Application(); app.router.add_get('/', hello); return app
+
+
+# Variable Resource
+# {name:\d+} using regex
+@routes.get('/{name}')
+async def test(request):
+    return wen.Response(text='%s' % request.match_info['name'])  # get data by match_info
+
+# Routes can also be given a name
+@routes.get('/root', name='root')
+async def handler(request): ...
+# Which can then be used to access and build a URL for that resource later
+url == request.app.router['root'].url_for().with_query({"a": "b", "c": "d"})
+assert url == URL('/root?a=b&c=d')
+
+#
+app.router.add_resource(r'/{user}/info', name='user-info')
+url = request.app.router['user-info'].url_for(user='john_doe')
+url_with_qs = url.with_query("a=b")
+assert url_with_qs == '/john_doe/info?a=b'
+
+
+# json
+async def handler(request):
+    data = {'some': 'data'}
+    return web.json_response(data)
+
+
+# aiohttp_session third library
+
+
+# get post data from request, get like a dict
+async def do_login(request):
+    data = await request.post()
+    login = data['login']
+    password = data['password']
+
+# files
+async def store_mp3_handler(request):
+    data = await request.post()  # it will danger when the file is large enough
+    mp3 = data['mp3']
+    filename = mp3.filename
+    # .file contains the actual file data that needs to be stored somewhere.
+    mp3_file = data['mp3'].file
+    content = mp3_file.read()
+
+# if big files, by Request.multipart()
+reader = await request.multipart()
+field = await reader.next()
+assert field.name == 'name'
+name = await field.read(decode=True)
+field = await reader.next()
+assert field.name == 'mp3'
+filename = field.filename
+size = 0
+with open(os.path.join('/spool/yarrr-media/mp3/', filename), 'wb') as f:
+        while True:
+            chunk = await field.read_chunk()  # 8192 bytes by default.
+            if not chunk:
+                break
+            size += len(chunk)
+            f.write(chunk)
+
+
+# Redirects, in this module, return other modules urls
+@aiohttp_jinja2.template('login.html')
+async def login(request):
+    if request.method == 'POST':
+        form = await request.post()
+        error = validate_login(form)
+        if error:
+            return {'error': error}
+        else:
+            # login form is valid
+            location = request.app.router['index'].url_for()
+            raise web.HTTPFound(location=location)
+    return {}
+
+app.router.add_get('/', index, name='index')
+app.router.add_get('/login', login, name='login')
+app.router.add_post('/login', login, name='login')
+
+
+
+# 
+class MyView(web.View):
+    async def get(self):
+        return await get_resp(self.request)
+
+    async def post(self):
+        return await post_resp(self.request)
+# such as:
+@routes.view('/path/to')
+class MyView(web.View):
+# such as:
+web.view('/path/to', MyView)
+
+
+
+
+
