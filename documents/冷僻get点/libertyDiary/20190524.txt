@@ -14,7 +14,7 @@ IP访问频率：可以更换IP，或者限制访问速度
 3、解析
 正则，这个太难了
 xpath，这个基本都还好
-我似乎还不会用requests的方法进行解析（todo）
+我似乎还不会用requests的方法进行解析（todo） scrapy里面有TextResponse可以构造，有Select可以构造，前面是功能级，后面是轻量级
 
 目标：
 scrapy框架还需要研究
