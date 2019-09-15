@@ -3,7 +3,7 @@ import time,socket,threading
 def tcplink(sock, addr):
 	print('accept data from %s:%s' % addr)
 	sock.send(b'Welcome to server')
-	while True:
+	while True:  # 这种数据创建一个tcp线程连接，但是很怪，数量上去了怎么办啊
 		data = sock.recv(1024)
 		time.sleep(1)
 		if not data or data.decode('utf-8') == 'exit':
