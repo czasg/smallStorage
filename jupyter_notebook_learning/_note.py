@@ -16,16 +16,26 @@ import numpy as np
 # plt.plot  # 简单的就是输入x，y，然后定义一个label的名字。如何只提供一组数据，则默认为y数据，并从0开始自动补全x
 # plt.axis([0, 6, 0, 20])  # 设置x、y轴的坐标范围，这里就是0-6和0-20。 [xmin, xmax, ymin, ymax]
 # plt.plot 提供第三个参数来改变样式，默认格式字符串为“b-”，为蓝色实线。'ro'为红点
-data = {'a': np.arange(50),
-        'c': np.random.randint(0, 50, 50),
-        'd': np.random.randn(50)}
-data['b'] = data['a'] + 10 * np.random.randn(50)
-data['d'] = np.abs(data['d']) * 100
+# plt.subplot(131)  # plt.subplot(1, 3, 1) 一个意思，y轴上一个父类，x轴上三个子类，选择当前第1个图 bar柱状图scatter散点图plot默认折线图  figure定义花布
+# plt.figure(1)  # 用来创建第1个figure，可以创建多个
+# plt.text(60, .025, r'$\mu=100,\ \sigma=15$')  # 在指定位置显示文本
+# plt.annotate  # 添加相关的注释。第一个参数是文本，第二个是箭头的坐标。后序可以添加文本从而指向箭头 ylim 设置y轴的间隔
+# Data for plotting
 
-plt.scatter('a', 'b', c='c', s='d', data=data)
-plt.xlabel('entry a')
-plt.ylabel('entry b')
-plt.show()
+# 热力图，太漂亮了把。bilinear - 这个是比较漂亮的热力图。数字越大的，颜色越亮，给人一种热热的感觉咯
+# 可以设置origin='upper' origin='lower'来控制值越大颜色的深浅
+# A = np.random.rand(5, 5)
+# print(A)
+# fig, axs = plt.subplots(1, 3, figsize=(10, 3))
+# for ax, interp in zip(axs, ['nearest', 'bilinear', 'bicubic']):
+#     ax.imshow(A, interpolation=interp)
+#     ax.set_title(interp.capitalize())
+#     ax.grid(True)
+# plt.show()
+
+# ax.hist(x, num_bins, density=1) 画直方图，返回y轴的值，x轴的值
+# ax.scatter  # 四个参数分别为x轴坐标，y轴坐标。然后就是每个点的大小，再然后就是每个点的颜色
+
 """一个图的一部分：
 title：标题
 Figure：画布
