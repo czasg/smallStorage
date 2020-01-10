@@ -1,12 +1,12 @@
-ÒÑÓÐ²Ö£º
-Django¡¢Scrapy¡¢ML¡¢practice
+å·²æœ‰ä»“ï¼š
+Djangoã€Scrapyã€MLã€practice
 
-ÏÖÔÚ´Ë²ÖÀïÃæÒÑÎÞDjango£¬µ«ÊÇÓÐÒ»Ð©ÎÄµµºÍ´úÂë
-ÐèÒªÂýÂý½«ÕâÐ©×ªÒÆ³öÈ¥
+çŽ°åœ¨æ­¤ä»“é‡Œé¢å·²æ— Djangoï¼Œä½†æ˜¯æœ‰ä¸€äº›æ–‡æ¡£å’Œä»£ç 
+éœ€è¦æ…¢æ…¢å°†è¿™äº›è½¬ç§»å‡ºåŽ»
 
-´úÂë°üº¬£º
-²âÊÔÓÃµÄ£¨ÄÚº¬Êý¾Ý¿âµÄ²Ù×÷£¬dispatch¿â£¬twisted¿â£©-> practiceStorage
-leetcode´úÂë  -> smallStroage£¬ÍâÃæ°É£¨ÖØÃüÃû£¬Ç°Ãæ´øÉÏÊý×Ö£¬±ê¼ÇÐòºÅ£©
-ÍøÂçÑ§Ï°µÄ´úÂë£¨lxml£¬numpyµÈ£¬docx£¬thensorflow£¬xlrdµÈ£© -> practiceStorage£¨thensorflowºóÐòÔÙ×ªµ½MLÖÐ£©
-Ò»¸ö±Ê¼Ç£¬ÀïÃæ×°µÄÊÇreÕýÔò´úÂë  -> practiceStorage
+ä»£ç åŒ…å«ï¼š
+æµ‹è¯•ç”¨çš„ï¼ˆå†…å«æ•°æ®åº“çš„æ“ä½œï¼Œdispatchåº“ï¼Œtwistedåº“ï¼‰-> practiceStorage
+leetcodeä»£ç   -> smallStroageï¼Œå¤–é¢å§ï¼ˆé‡å‘½åï¼Œå‰é¢å¸¦ä¸Šæ•°å­—ï¼Œæ ‡è®°åºå·ï¼‰
+ç½‘ç»œå­¦ä¹ çš„ä»£ç ï¼ˆlxmlï¼Œnumpyç­‰ï¼Œdocxï¼Œthensorflowï¼Œxlrdç­‰ï¼‰ -> practiceStorageï¼ˆthensorflowåŽåºå†è½¬åˆ°MLä¸­ï¼‰
+ä¸€ä¸ªç¬”è®°ï¼Œé‡Œé¢è£…çš„æ˜¯reæ­£åˆ™ä»£ç   -> practiceStorage
 command.txt -> practiceStorage
