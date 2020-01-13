@@ -1,22 +1,22 @@
-# ×î¼òµ¥µÄ
+# æœ€ç®€å•çš„
 from jinja2 import Environment, PackageLoader
-env = Environment(loader=PackageLoader('yourapplication', 'templates'))  # £¨package£¬path£©
+env = Environment(loader=PackageLoader('yourapplication', 'templates'))  # ï¼ˆpackageï¼Œpathï¼‰
 template = env.get_template('mytemplate.html')
 print template.render(the='variables', go='here')
 
 
-# ÄÚÖÃ¸ù¾İÂ·¾¶µÄ¼ÓÔØ·½·¨
+# å†…ç½®æ ¹æ®è·¯å¾„çš„åŠ è½½æ–¹æ³•
 loader = FileSystemLoader('/path/to/templates')
 loader = FileSystemLoader(['/path/to/templates', '/other/path'])
 
-# ÄÚÖÃ¸ù¾İÄ£¿éµÄ¼ÓÔØ·½·¨
+# å†…ç½®æ ¹æ®æ¨¡å—çš„åŠ è½½æ–¹æ³•
 loader = PackageLoader('mypackage', 'views')
 
-# ÄÚÖÃ¸ù¾İdict×ÖµäµÄ¼ÓÔØ·½·¨
+# å†…ç½®æ ¹æ®dictå­—å…¸çš„åŠ è½½æ–¹æ³•
 loader = DictLoader({'index.html': 'source here'})
 
-# ¸ù¾İÇ°×º¼ÓÔØ£¿
-class jinja2.PrefixLoader(mapping, delimiter='/')  # Ä¬ÈÏÎª'/',   'app1/index.html'
+# æ ¹æ®å‰ç¼€åŠ è½½ï¼Ÿ
+class jinja2.PrefixLoader(mapping, delimiter='/')  # é»˜è®¤ä¸º'/',   'app1/index.html'
 loader = PrefixLoader({
     'app1':     PackageLoader('mypackage.app1'),
     'app2':     PackageLoader('mypackage.app2')
@@ -25,7 +25,7 @@ loader = PrefixLoader({
 
 
 
-# ×Ö½ÚÂë»º´æ
+# å­—èŠ‚ç ç¼“å­˜
 from os import path
 class MyCache(BytecodeCache):
     def __init__(self, directory):
@@ -41,20 +41,20 @@ class MyCache(BytecodeCache):
             bucket.write_bytecode(f)
 
 
-# »ù±¾¶¨Òå
-ÕâÀïÓĞÁ½ÖÖ·Ö¸ô·û: {% ... %} ºÍ {{ ... }} ¡£
-Ç°ÕßÓÃÓÚÖ´ĞĞÖîÈç for Ñ­»· »ò¸³ÖµµÄÓï¾ä£¬ºóÕß°Ñ±í´ïÊ½µÄ½á¹û´òÓ¡µ½Ä£°åÉÏ¡£
+# åŸºæœ¬å®šä¹‰
+è¿™é‡Œæœ‰ä¸¤ç§åˆ†éš”ç¬¦: {% ... %} å’Œ {{ ... }} ã€‚
+å‰è€…ç”¨äºæ‰§è¡Œè¯¸å¦‚ for å¾ªç¯ æˆ–èµ‹å€¼çš„è¯­å¥ï¼Œåè€…æŠŠè¡¨è¾¾å¼çš„ç»“æœæ‰“å°åˆ°æ¨¡æ¿ä¸Šã€‚
 
-{{ foo.bar }}  # Í¨¹ı.·ÃÎÊ±äÁ¿µÄÊôĞÔ£¬»òÕßÍ¨¹ıÏÂ±êÒ²¿ÉÒÔ
+{{ foo.bar }}  # é€šè¿‡.è®¿é—®å˜é‡çš„å±æ€§ï¼Œæˆ–è€…é€šè¿‡ä¸‹æ ‡ä¹Ÿå¯ä»¥
 {{ foo['bar'] }}
 
 
-# ¹ıÂËÆ÷
-¹ıÂËÆ÷Óë±äÁ¿ÓÃ¹ÜµÀ·ûºÅ£¨ | £©·Ö¸î£¬Ò»¸ö¹ıÂËÆ÷µÄÊä³ö»á±»×÷Îª ºóÒ»¸ö¹ıÂËÆ÷µÄÊäÈë¡£
-{{ name|striptags|title }}  »áÒÆ³ı name ÖĞµÄËùÓĞ HTML ±êÇ©²¢ÇÒ¸ÄĞ´ Îª±êÌâÑùÊ½µÄ´óĞ¡Ğ´¸ñÊ½¡£
-¸öÀı×Ó»á °ÑÒ»¸öÁĞ±íÓÃ¶ººÅÁ¬½ÓÆğÀ´: {{ list|join(', ') }} 
+# è¿‡æ»¤å™¨
+è¿‡æ»¤å™¨ä¸å˜é‡ç”¨ç®¡é“ç¬¦å·ï¼ˆ | ï¼‰åˆ†å‰²ï¼Œä¸€ä¸ªè¿‡æ»¤å™¨çš„è¾“å‡ºä¼šè¢«ä½œä¸º åä¸€ä¸ªè¿‡æ»¤å™¨çš„è¾“å…¥ã€‚
+{{ name|striptags|title }}  ä¼šç§»é™¤ name ä¸­çš„æ‰€æœ‰ HTML æ ‡ç­¾å¹¶ä¸”æ”¹å†™ ä¸ºæ ‡é¢˜æ ·å¼çš„å¤§å°å†™æ ¼å¼ã€‚
+ä¸ªä¾‹å­ä¼š æŠŠä¸€ä¸ªåˆ—è¡¨ç”¨é€—å·è¿æ¥èµ·æ¥: {{ list|join(', ') }} 
 
-# ×¢ÊÍ
+# æ³¨é‡Š
  {# ... #} 
 {# note: disabled template because we no longer use this
     {% for user in users %}
@@ -63,14 +63,14 @@ class MyCache(BytecodeCache):
 #}
 
 
-# ¼ÓÈëÁË-£¬Ôò»áÈ¥µô¿Õ°×
+# åŠ å…¥äº†-ï¼Œåˆ™ä¼šå»æ‰ç©ºç™½
 {% for item in seq -%}
     {{ item }}
-{%- endfor %}   # ±êÇ©ºÍ¼õºÅÖ®¼ä²»ÄÜÓĞ¿Õ°×¡£
+{%- endfor %}   # æ ‡ç­¾å’Œå‡å·ä¹‹é—´ä¸èƒ½æœ‰ç©ºç™½ã€‚
 
 
 
-# ĞĞÓï¾ä, Ê¹ÓÃ#´úÌæ{}
+# è¡Œè¯­å¥, ä½¿ç”¨#ä»£æ›¿{}
 <ul>
 # for item in seq
     <li>{{ item }}</li>
@@ -84,10 +84,10 @@ class MyCache(BytecodeCache):
 </ul>
 
 
-# »ù±¾Ä£°å ËùÓĞµÄ block ±êÇ© ¸æËßÄ£°åÒıÇæ ×ÓÄ£°å¿ÉÒÔ¸²¸ÇÄ£°åÖĞµÄÕâĞ©²¿·Ö
-{% block %}    # {% block sidebar %} ºóÃæÊÇ×¢ÊÍ
-# ×ÓÄ£°å  {% extend %} ±êÇ©ÊÇÕâÀïµÄ¹Ø¼ü¡£Ëü¸æËßÄ£°åÒıÇæÕâ¸öÄ£°å¡°¼Ì³Ğ¡±ÁíÒ»¸öÄ£°å
-# Èç {% extends "layout/default.html" %}
+# åŸºæœ¬æ¨¡æ¿ æ‰€æœ‰çš„ block æ ‡ç­¾ å‘Šè¯‰æ¨¡æ¿å¼•æ“ å­æ¨¡æ¿å¯ä»¥è¦†ç›–æ¨¡æ¿ä¸­çš„è¿™äº›éƒ¨åˆ†
+{% block %}    # {% block sidebar %} åé¢æ˜¯æ³¨é‡Š
+# å­æ¨¡æ¿  {% extend %} æ ‡ç­¾æ˜¯è¿™é‡Œçš„å…³é”®ã€‚å®ƒå‘Šè¯‰æ¨¡æ¿å¼•æ“è¿™ä¸ªæ¨¡æ¿â€œç»§æ‰¿â€å¦ä¸€ä¸ªæ¨¡æ¿
+# å¦‚ {% extends "layout/default.html" %}
 {% extends "base.html" %}
 {% block title %}Index{% endblock %}
 {% block head %}
@@ -104,7 +104,7 @@ class MyCache(BytecodeCache):
 {% endblock %}
 
 
-# Super ¿é   ¿ÉÒÔµ÷ÓÃ super À´äÖÈ¾¸¸¼¶¿éµÄÄÚÈİ¡£Õâ»á·µ»Ø¸¸¼¶¿éµÄ½á¹û:
+# Super å—   å¯ä»¥è°ƒç”¨ super æ¥æ¸²æŸ“çˆ¶çº§å—çš„å†…å®¹ã€‚è¿™ä¼šè¿”å›çˆ¶çº§å—çš„ç»“æœ:
 {% block sidebar %}
     <h3>Table Of Contents</h3>
     ...
@@ -112,19 +112,19 @@ class MyCache(BytecodeCache):
 {% endblock %}
 
 
-# ÔÚÒ»¸ö for Ñ­»·¿éÖĞÄã¿ÉÒÔ·ÃÎÊÕâĞ©ÌØÊâµÄ±äÁ¿:
-loop.index	µ±Ç°Ñ­»·µü´úµÄ´ÎÊı£¨´Ó 1 ¿ªÊ¼£©
-loop.index0	µ±Ç°Ñ­»·µü´úµÄ´ÎÊı£¨´Ó 0 ¿ªÊ¼£©
-loop.revindex	µ½Ñ­»·½áÊøĞèÒªµü´úµÄ´ÎÊı£¨´Ó 1 ¿ªÊ¼£©
-loop.revindex0	µ½Ñ­»·½áÊøĞèÒªµü´úµÄ´ÎÊı£¨´Ó 0 ¿ªÊ¼£©
-loop.first	Èç¹ûÊÇµÚÒ»´Îµü´ú£¬Îª True ¡£
-loop.last	Èç¹ûÊÇ×îºóÒ»´Îµü´ú£¬Îª True ¡£
-loop.length	ĞòÁĞÖĞµÄÏîÄ¿Êı¡£
-loop.cycle	ÔÚÒ»´®ĞòÁĞ¼äÆÚÈ¡ÖµµÄ¸¨Öúº¯Êı¡£¼ûÏÂÃæµÄ½âÊÍ¡£
+# åœ¨ä¸€ä¸ª for å¾ªç¯å—ä¸­ä½ å¯ä»¥è®¿é—®è¿™äº›ç‰¹æ®Šçš„å˜é‡:
+loop.index	å½“å‰å¾ªç¯è¿­ä»£çš„æ¬¡æ•°ï¼ˆä» 1 å¼€å§‹ï¼‰
+loop.index0	å½“å‰å¾ªç¯è¿­ä»£çš„æ¬¡æ•°ï¼ˆä» 0 å¼€å§‹ï¼‰
+loop.revindex	åˆ°å¾ªç¯ç»“æŸéœ€è¦è¿­ä»£çš„æ¬¡æ•°ï¼ˆä» 1 å¼€å§‹ï¼‰
+loop.revindex0	åˆ°å¾ªç¯ç»“æŸéœ€è¦è¿­ä»£çš„æ¬¡æ•°ï¼ˆä» 0 å¼€å§‹ï¼‰
+loop.first	å¦‚æœæ˜¯ç¬¬ä¸€æ¬¡è¿­ä»£ï¼Œä¸º True ã€‚
+loop.last	å¦‚æœæ˜¯æœ€åä¸€æ¬¡è¿­ä»£ï¼Œä¸º True ã€‚
+loop.length	åºåˆ—ä¸­çš„é¡¹ç›®æ•°ã€‚
+loop.cycle	åœ¨ä¸€ä¸²åºåˆ—é—´æœŸå–å€¼çš„è¾…åŠ©å‡½æ•°ã€‚è§ä¸‹é¢çš„è§£é‡Šã€‚
 
 
 
-Òªµİ¹éµØ Ê¹ÓÃÑ­»·£¬ÄãÖ»ĞèÒªÔÚÑ­»·¶¨ÒåÖĞ¼ÓÉÏ recursive ĞŞÊÎ£¬²¢ÔÚÄãÏëÊ¹ÓÃµİ¹éµÄµØ ·½£¬¶Ô¿Éµü´úÁ¿µ÷ÓÃ loop ±äÁ¿¡£
+è¦é€’å½’åœ° ä½¿ç”¨å¾ªç¯ï¼Œä½ åªéœ€è¦åœ¨å¾ªç¯å®šä¹‰ä¸­åŠ ä¸Š recursive ä¿®é¥°ï¼Œå¹¶åœ¨ä½ æƒ³ä½¿ç”¨é€’å½’çš„åœ° æ–¹ï¼Œå¯¹å¯è¿­ä»£é‡è°ƒç”¨ loop å˜é‡ã€‚
 <ul class="sitemap">
 {%- for item in sitemap recursive %}
     <li><a href="{{ item.href|e }}">{{ item.title }}</a>
@@ -136,20 +136,20 @@ loop.cycle	ÔÚÒ»´®ĞòÁĞ¼äÆÚÈ¡ÖµµÄ¸¨Öúº¯Êı¡£¼ûÏÂÃæµÄ½âÊÍ¡£
 
 
 
-# ºê
+# å®
 {% macro input(name, value='', type='text', size=20) -%}
     <input type="{{ type }}" name="{{ name }}" value="{{
         value|e }}" size="{{ size }}">
 {%- endmacro %}
-ÔÚÃüÃû¿Õ¼äÖĞ£¬ºêÖ®ºó¿ÉÒÔÏñº¯ÊıÒ»Ñùµ÷ÓÃ:
+åœ¨å‘½åç©ºé—´ä¸­ï¼Œå®ä¹‹åå¯ä»¥åƒå‡½æ•°ä¸€æ ·è°ƒç”¨:
 <p>{{ input('username') }}</p>
 <p>{{ input('password', type='password') }}</p>
 
-Èç¹ûºêÔÚ²»Í¬µÄÄ£°åÖĞ¶¨Òå£¬ÄãĞèÒªÊ×ÏÈÊ¹ÓÃ import ¡£
-ÔÚºêÄÚ²¿£¬Äã¿ÉÒÔ·ÃÎÊÈı¸öÌØÊâµÄ±äÁ¿:
+å¦‚æœå®åœ¨ä¸åŒçš„æ¨¡æ¿ä¸­å®šä¹‰ï¼Œä½ éœ€è¦é¦–å…ˆä½¿ç”¨ import ã€‚
+åœ¨å®å†…éƒ¨ï¼Œä½ å¯ä»¥è®¿é—®ä¸‰ä¸ªç‰¹æ®Šçš„å˜é‡:
 
-# µ÷ÓÃ
-ÔÚÄ³Ğ©Çé¿öÏÂ£¬ĞèÒª°ÑÒ»¸öºê´«µİµ½ÁíÒ»¸öºê¡£Îª´Ë£¬¿ÉÒÔÊ¹ÓÃÌØÊâµÄ call ¿é    ÈÃºêÀûÓÃµ÷ÓÃ¹¦ÄÜ:
+# è°ƒç”¨
+åœ¨æŸäº›æƒ…å†µä¸‹ï¼Œéœ€è¦æŠŠä¸€ä¸ªå®ä¼ é€’åˆ°å¦ä¸€ä¸ªå®ã€‚ä¸ºæ­¤ï¼Œå¯ä»¥ä½¿ç”¨ç‰¹æ®Šçš„ call å—    è®©å®åˆ©ç”¨è°ƒç”¨åŠŸèƒ½:
 {% macro render_dialog(title, class='dialog') -%}
     <div class="{{ class }}">
         <h2>{{ title }}</h2>
@@ -158,7 +158,7 @@ loop.cycle	ÔÚÒ»´®ĞòÁĞ¼äÆÚÈ¡ÖµµÄ¸¨Öúº¯Êı¡£¼ûÏÂÃæµÄ½âÊÍ¡£
         </div>
     </div>
 {%- endmacro %}
-×Ü¶øÑÔÖ®£¬µ÷ÓÃ¿éµÄ¹¤×÷·½ Ê½¼¸ºõÓëºêÏàÍ¬£¬Ö»ÊÇµ÷ÓÃ¿éÃ»ÓĞÃû³Æ¡£
+æ€»è€Œè¨€ä¹‹ï¼Œè°ƒç”¨å—çš„å·¥ä½œæ–¹ å¼å‡ ä¹ä¸å®ç›¸åŒï¼Œåªæ˜¯è°ƒç”¨å—æ²¡æœ‰åç§°ã€‚
 {% call render_dialog('Hello World') %}
     This is a simple dialog rendered by using a macro and
     a call block.
@@ -166,28 +166,28 @@ loop.cycle	ÔÚÒ»´®ĞòÁĞ¼äÆÚÈ¡ÖµµÄ¸¨Öúº¯Êı¡£¼ûÏÂÃæµÄ½âÊÍ¡£
 
 
 
-# ¸³Öµ
-¸³ÖµÊ¹ÓÃ set ±êÇ©£¬²¢ÇÒ¿ÉÒÔÎª¶à¸ö±äÁ¿¸³Öµ:
+# èµ‹å€¼
+èµ‹å€¼ä½¿ç”¨ set æ ‡ç­¾ï¼Œå¹¶ä¸”å¯ä»¥ä¸ºå¤šä¸ªå˜é‡èµ‹å€¼:
 {% set navigation = [('index.html', 'Index'), ('about.html', 'About')] %}
 {% set key, value = call_something() %}
 
 
-# °üº¬
-include Óï¾äÓÃÓÚ°üº¬Ò»¸öÄ£°å£¬²¢ÔÚµ±Ç°ÃüÃû¿Õ¼äÖĞ·µ»ØÄÇ¸öÎÄ¼şµÄÄÚÈİäÖ È¾½á¹û:
+# åŒ…å«
+include è¯­å¥ç”¨äºåŒ…å«ä¸€ä¸ªæ¨¡æ¿ï¼Œå¹¶åœ¨å½“å‰å‘½åç©ºé—´ä¸­è¿”å›é‚£ä¸ªæ–‡ä»¶çš„å†…å®¹æ¸² æŸ“ç»“æœ:
 {% include 'header.html' %}
     Body
 {% include 'footer.html' %}
 
-Ñù Èç¹ûÄ£°å²»´æÔÚ£¬Jinja »áºöÂÔÕâÌõÓï¾ä¡£Óë with »ò without context Óï¾äÁªºÏÊ¹ÓÃÊ±£¬Ëü±ØĞë±»·ÅÔÚÉÏÏÂÎÄ¿É¼ûĞÔÓï¾ä Ö®Ç° ¡£
+æ · å¦‚æœæ¨¡æ¿ä¸å­˜åœ¨ï¼ŒJinja ä¼šå¿½ç•¥è¿™æ¡è¯­å¥ã€‚ä¸ with æˆ– without context è¯­å¥è”åˆä½¿ç”¨æ—¶ï¼Œå®ƒå¿…é¡»è¢«æ”¾åœ¨ä¸Šä¸‹æ–‡å¯è§æ€§è¯­å¥ ä¹‹å‰ ã€‚
 {% include "sidebar.html" ignore missing %}
 {% include "sidebar.html" ignore missing with context %}
 {% include "sidebar.html" ignore missing without context %}
-ÄãÒ²¿ÉÒÔÌá¹©Ò»¸öÄ£°åÁĞ±í£¬Ëü»áÔÚ°üº¬Ç°±»¼ì²éÊÇ·ñ´æÔÚ¡£
+ä½ ä¹Ÿå¯ä»¥æä¾›ä¸€ä¸ªæ¨¡æ¿åˆ—è¡¨ï¼Œå®ƒä¼šåœ¨åŒ…å«å‰è¢«æ£€æŸ¥æ˜¯å¦å­˜åœ¨ã€‚
 {% include ['page_detailed.html', 'page.html'] %}
 {% include ['special_sidebar.html', 'sidebar.html'] ignore missing %}
 
 
-# µ¼Èë
+# å¯¼å…¥
 {% macro input(name, value='', type='text') -%}
     <input type="{{ type }}" value="{{ value|e }}" name="{{ name }}">
 {%- endmacro %}
@@ -196,7 +196,7 @@ include Óï¾äÓÃÓÚ°üº¬Ò»¸öÄ£°å£¬²¢ÔÚµ±Ç°ÃüÃû¿Õ¼äÖĞ·µ»ØÄÇ¸öÎÄ¼şµÄÄÚÈİäÖ È¾½á¹û:
     <textarea name="{{ name }}" rows="{{ rows }}" cols="{{ cols
         }}">{{ value|e }}</textarea>
 {%- endmacro %}
-------------------×î¼òµ¥Áé»îµÄ·½Ê½ÊÇ°ÑÕû¸öÄ£¿éµ¼ÈëÎªÒ»¸ö±äÁ¿¡£ÕâÑùÄã¿ÉÒÔ·ÃÎÊÊôĞÔ:
+------------------æœ€ç®€å•çµæ´»çš„æ–¹å¼æ˜¯æŠŠæ•´ä¸ªæ¨¡å—å¯¼å…¥ä¸ºä¸€ä¸ªå˜é‡ã€‚è¿™æ ·ä½ å¯ä»¥è®¿é—®å±æ€§:
 {% import 'forms.html' as forms %}
 <dl>
     <dt>Username</dt>
@@ -205,7 +205,7 @@ include Óï¾äÓÃÓÚ°üº¬Ò»¸öÄ£°å£¬²¢ÔÚµ±Ç°ÃüÃû¿Õ¼äÖĞ·µ»ØÄÇ¸öÎÄ¼şµÄÄÚÈİäÖ È¾½á¹û:
     <dd>{{ forms.input('password', type='password') }}</dd>
 </dl>
 <p>{{ forms.textarea('comment') }}</p>
-------------------´ËÍâÄãÒ²¿ÉÒÔ´ÓÄ£°åÖĞµ¼ÈëÃû³Æµ½µ±Ç°µÄÃüÃû¿Õ¼ä:
+------------------æ­¤å¤–ä½ ä¹Ÿå¯ä»¥ä»æ¨¡æ¿ä¸­å¯¼å…¥åç§°åˆ°å½“å‰çš„å‘½åç©ºé—´:
 {% from 'forms.html' import input as input_field, textarea %}
 <dl>
     <dt>Username</dt>
@@ -216,12 +216,12 @@ include Óï¾äÓÃÓÚ°üº¬Ò»¸öÄ£°å£¬²¢ÔÚµ±Ç°ÃüÃû¿Õ¼äÖĞ·µ»ØÄÇ¸öÎÄ¼şµÄÄÚÈİäÖ È¾½á¹û:
 <p>{{ textarea('comment') }}</p>
 
 
-# µ¼ÈëÉÏÏÂÎÄĞĞÎª  render_box.html ¿ÉÒÔ ·ÃÎÊ box 
+# å¯¼å…¥ä¸Šä¸‹æ–‡è¡Œä¸º  render_box.html å¯ä»¥ è®¿é—® box 
 {% for box in boxes %}
     {% include "render_box.html" %}
 {% endfor %}
 
-# ÁĞ±íÓÃÓÚ´æ´¢ºÍµü´úĞòÁĞ»¯µÄÊı¾İ¡£ÀıÈç Äã¿ÉÒÔÈİÒ×µØÔÚ for Ñ­»·ÖĞÓÃÁĞ±íºÍÔª×é´´½¨Ò»¸öÁ´½ÓµÄÁĞ±í:
+# åˆ—è¡¨ç”¨äºå­˜å‚¨å’Œè¿­ä»£åºåˆ—åŒ–çš„æ•°æ®ã€‚ä¾‹å¦‚ ä½ å¯ä»¥å®¹æ˜“åœ°åœ¨ for å¾ªç¯ä¸­ç”¨åˆ—è¡¨å’Œå…ƒç»„åˆ›å»ºä¸€ä¸ªé“¾æ¥çš„åˆ—è¡¨:
 <ul>
 {% for href, caption in [('index.html', 'Index'), ('about.html', 'About'),
                          ('downloads.html', 'Downloads')] %}
