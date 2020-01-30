@@ -1,3 +1,0 @@
-scrapy crawl zhilianzhaopin
-
-pause

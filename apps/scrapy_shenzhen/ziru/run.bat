@@ -1,3 +1,0 @@
-scrapy crawl ziruspider
-
-pause
